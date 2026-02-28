@@ -1,1 +1,119 @@
-<h1>PhysioPro</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPro | Rehab & Performance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">PhysioPro</div>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <h1>Rehab + Performance<br/>based on movement science.</h1>
+      <p class="sub">
+        Strength-based physical therapy, return-to-sport, and athletic performance in Tijuana.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/5216634875859" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="#contact">Book evaluation</a>
+      </div>
+
+      <div class="proof">
+        <div class="pill">Strength progression</div>
+        <div class="pill">Objective testing</div>
+        <div class="pill">Return-to-performance</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <p class="lead">A clinic built for athletes and active people.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Injury Rehab</h3>
+          <p>Sports & orthopedic rehab focused on loading, tissue capacity, and strength.</p>
+        </div>
+        <div class="card">
+          <h3>Return to Sport</h3>
+          <p>Criteria-based progressions, re-testing, and a clear plan back to performance.</p>
+        </div>
+        <div class="card">
+          <h3>Movement Analysis</h3>
+          <p>Identify limiting factors, asymmetries, and patterns that impact pain and performance.</p>
+        </div>
+        <div class="card">
+          <h3>Performance Training</h3>
+          <p>Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section alt">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>Evaluation</h3>
+            <p>Movement system diagnosis + baseline measures so we know exactly what to change.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>Plan + Training</h3>
+            <p>Progressive strength + skill work. You’ll know what to do and why you’re doing it.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>Re-test</h3>
+            <p>We re-measure, adjust, and build toward return-to-sport / return-to-running.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="lead">Message me on WhatsApp and I’ll get you scheduled.</p>
+
+      <div class="contact-card">
+        <div>
+          <h3>PhysioPro — Tijuana</h3>
+          <p class="small">Hours: Mon–Sat (add your hours)</p>
+          <p class="small">Address: (add your neighborhood / address)</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://wa.me/5216634875859" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> PhysioPro • Tijuana, MX</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
