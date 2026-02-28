@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 
 cd /d "%~dp0"
 
@@ -20,12 +20,21 @@ echo.
 echo ---- Staging ----
 git add -A
 
-set MSG=%*
-if "%MSG%"=="" set MSG=Update site
+REM Build commit message safely from all args
+set "MSG="
+:loop
+if "%~1"=="" goto done
+set "MSG=!MSG!%~1 "
+shift
+goto loop
+:done
+
+REM Default message if none provided
+if "!MSG!"=="" set "MSG=Update site"
 
 echo.
-echo ---- Committing: "%MSG%" ----
-git commit -m "%MSG%" >nul 2>&1
+echo ---- Committing: "!MSG!" ----
+git commit -m "!MSG!" >nul 2>&1
 
 echo.
 echo ---- Pushing ----
