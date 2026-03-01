@@ -5,116 +5,337 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PhysioPro | Rehab & Performance</title>
+
+  <!-- SEO (basic, premium trust) -->
+  <meta name="description"
+    content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
+
+  <!-- If your logo is PNG, change logo.jpg -> logo.png -->
+  <link rel="icon" href="images/logo.jpg" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- HERO -->
   <header class="hero">
-    <nav class="nav">
-      <div class="brand">PhysioPro</div>
-      <div class="navlinks">
-        <a href="#services">Services</a>
-        <a href="#process">How it works</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <img src="images/logo.jpg" alt="PhysioPro logo" />
+          <div class="name">
+            <strong>PHYSIOPRO</strong>
+            <span data-i18n="tagline">Recovery Starts Here</span>
+          </div>
+        </div>
 
-    <div class="hero-inner">
-      <h1>Rehab + Performance<br />based on movement science.</h1>
-      <p class="sub">
-        Strength-based physical therapy, return-to-sport, and athletic performance in Tijuana.
-      </p>
+        <div class="navlinks">
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#process" data-i18n="nav_process">How it works</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
 
-      <div class="cta">
-        <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn ghost" href="#contact">Book evaluation</a>
-      </div>
+        <div class="lang">
+          <button class="langbtn" id="btnEN" type="button">EN</button>
+          <button class="langbtn" id="btnES" type="button">ES</button>
+        </div>
+      </nav>
 
-      <div class="proof">
-        <div class="pill">Strength progression</div>
-        <div class="pill">Objective testing</div>
-        <div class="pill">Return-to-performance</div>
+      <div class="hero-inner">
+        <div class="kicker">
+          <span class="kdot"></span>
+          <span data-i18n="kicker">Performance rehab • Strength • Return to sport</span>
+        </div>
+
+        <h1 data-i18n="hero_title">Performance-Based Physical Therapy</h1>
+
+        <p class="sub" data-i18n="hero_sub">
+          High-level rehab with clinical precision—built for athletes and active people in Tijuana.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
+            data-i18n="cta_whatsapp">WhatsApp</a>
+          <a class="btn ghost" href="#contact" data-i18n="cta_book">Book evaluation</a>
+        </div>
+
+        <div class="proof">
+          <div class="pill">
+            <strong data-i18n="pA_title">Evidence-based</strong>
+            <span data-i18n="pA_body">Objective testing and clear progression.</span>
+          </div>
+          <div class="pill">
+            <strong data-i18n="pB_title">Strength first</strong>
+            <span data-i18n="pB_body">Load management + performance transfer.</span>
+          </div>
+          <div class="pill">
+            <strong data-i18n="pC_title">Premium experience</strong>
+            <span data-i18n="pC_body">Clean, focused sessions—no fluff.</span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
+
+    <!-- SERVICES -->
     <section id="services" class="section">
-      <h2>Services</h2>
-      <p class="lead">A clinic built for athletes and active people.</p>
+      <div class="container">
+        <h2 data-i18n="services_title">Services</h2>
+        <p class="lead" data-i18n="services_lead">A clinic built for athletes and active people.</p>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Injury Rehab</h3>
-          <p>Sports & orthopedic rehab focused on loading, tissue capacity, and strength.</p>
-        </div>
-        <div class="card">
-          <h3>Return to Sport</h3>
-          <p>Criteria-based progressions, re-testing, and a clear plan back to performance.</p>
-        </div>
-        <div class="card">
-          <h3>Movement Analysis</h3>
-          <p>Identify limiting factors, asymmetries, and patterns that impact pain and performance.</p>
-        </div>
-        <div class="card">
-          <h3>Performance Training</h3>
-          <p>Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.</p>
+        <div class="grid">
+          <div class="card">
+            <h3 data-i18n="s1_title">Injury Rehab</h3>
+            <p data-i18n="s1_body">Sports & orthopedic rehab focused on loading, tissue capacity, and strength.</p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="s2_title">Return to Sport</h3>
+            <p data-i18n="s2_body">Criteria-based progressions, re-testing, and a clear plan back to performance.</p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="s3_title">Movement Analysis</h3>
+            <p data-i18n="s3_body">Identify limiting factors, asymmetries, and patterns that impact pain and
+              performance.</p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="s4_title">Performance Training</h3>
+            <p data-i18n="s4_body">Strength & conditioning aligned to your sport: sprint, jump, change of direction,
+              endurance.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- PROCESS -->
     <section id="process" class="section alt">
-      <h2>How it works</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div>
-            <h3>Evaluation</h3>
-            <p>Movement system diagnosis + baseline measures so we know exactly what to change.</p>
+      <div class="container">
+        <h2 data-i18n="process_title">How it works</h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <h3 data-i18n="p1_title">Evaluation</h3>
+              <p data-i18n="p1_body">Movement system diagnosis + baseline measures so we know exactly what to change.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <div>
-            <h3>Plan + Training</h3>
-            <p>Progressive strength + skill work. You’ll know what to do and why you’re doing it.</p>
+
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <h3 data-i18n="p2_title">Plan + Training</h3>
+              <p data-i18n="p2_body">Progressive strength + skill work. You’ll know what to do and why you’re doing it.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <div>
-            <h3>Re-test</h3>
-            <p>We re-measure, adjust, and build toward return-to-sport / return-to-running.</p>
+
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <h3 data-i18n="p3_title">Re-test</h3>
+              <p data-i18n="p3_body">We re-measure, adjust, and build toward return-to-sport / return-to-running.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="lead">Message me on WhatsApp and I’ll get you scheduled.</p>
+      <div class="container">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p class="lead" data-i18n="contact_lead">Message me on WhatsApp and I’ll get you scheduled.</p>
 
-      <div class="contact-card">
-        <div>
-          <h3>PhysioPro — Tijuana</h3>
-          <p class="small">Hours: Mon–Sat (add your hours)</p>
-          <p class="small">Address: (add your neighborhood / address)</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com">Email</a>
+        <div class="contact-card">
+          <div>
+            <h3 data-i18n="contact_h3">PhysioPro — Tijuana</h3>
+            <p class="small"><span data-i18n="hours_label">Hours:</span> <span data-i18n="hours_value">Mon–Sat (add your
+                hours)</span></p>
+            <p class="small"><span data-i18n="address_label">Address:</span> <span data-i18n="address_value">(add your
+                neighborhood / address)</span></p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
+              data-i18n="cta_whatsapp">WhatsApp</a>
+            <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com" data-i18n="cta_email">Email</a>
+          </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <p>© <span id="y"></span> PhysioPro • Tijuana, MX</p>
+    <div class="container">
+      <p>© <span id="y"></span> <span data-i18n="footer_brand">PhysioPro</span> • <span data-i18n="footer_loc">Tijuana,
+          MX</span></p>
+    </div>
   </footer>
 
   <script>
+    // ======= i18n dictionary =======
+    const I18N = {
+      en: {
+        // Nav + hero
+        tagline: "Recovery Starts Here",
+        nav_services: "Services",
+        nav_process: "How it works",
+        nav_contact: "Contact",
+        kicker: "Performance rehab • Strength • Return to sport",
+        hero_title: "Performance-Based Physical Therapy",
+        hero_sub: "High-level rehab with clinical precision—built for athletes and active people in Tijuana.",
+        cta_whatsapp: "WhatsApp",
+        cta_book: "Book evaluation",
+
+        // Proof
+        pA_title: "Evidence-based",
+        pA_body: "Objective testing and clear progression.",
+        pB_title: "Strength first",
+        pB_body: "Load management + performance transfer.",
+        pC_title: "Premium experience",
+        pC_body: "Clean, focused sessions—no fluff.",
+
+        // Services
+        services_title: "Services",
+        services_lead: "A clinic built for athletes and active people.",
+        s1_title: "Injury Rehab",
+        s1_body: "Sports & orthopedic rehab focused on loading, tissue capacity, and strength.",
+        s2_title: "Return to Sport",
+        s2_body: "Criteria-based progressions, re-testing, and a clear plan back to performance.",
+        s3_title: "Movement Analysis",
+        s3_body: "Identify limiting factors, asymmetries, and patterns that impact pain and performance.",
+        s4_title: "Performance Training",
+        s4_body: "Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.",
+
+        // Process
+        process_title: "How it works",
+        p1_title: "Evaluation",
+        p1_body: "Movement system diagnosis + baseline measures so we know exactly what to change.",
+        p2_title: "Plan + Training",
+        p2_body: "Progressive strength + skill work. You’ll know what to do and why you’re doing it.",
+        p3_title: "Re-test",
+        p3_body: "We re-measure, adjust, and build toward return-to-sport / return-to-running.",
+
+        // Contact
+        contact_title: "Contact",
+        contact_lead: "Message me on WhatsApp and I’ll get you scheduled.",
+        contact_h3: "PhysioPro — Tijuana",
+        hours_label: "Hours:",
+        hours_value: "Mon–Sat (add your hours)",
+        address_label: "Address:",
+        address_value: "(add your neighborhood / address)",
+        cta_email: "Email",
+
+        // Footer
+        footer_brand: "PhysioPro",
+        footer_loc: "Tijuana, MX"
+      },
+
+      es: {
+        // Nav + hero
+        tagline: "Recovery Starts Here",
+        nav_services: "Servicios",
+        nav_process: "Cómo funciona",
+        nav_contact: "Contacto",
+        kicker: "Rehab de rendimiento • Fuerza • Retorno al deporte",
+        hero_title: "Fisioterapia Basada en Rendimiento",
+        hero_sub: "Rehabilitación de alto nivel con precisión clínica—para atletas y personas activas en Tijuana.",
+        cta_whatsapp: "WhatsApp",
+        cta_book: "Agendar valoración",
+
+        // Proof
+        pA_title: "Basado en evidencia",
+        pA_body: "Evaluación objetiva y progresión clara.",
+        pB_title: "Fuerza primero",
+        pB_body: "Manejo de carga + transferencia al rendimiento.",
+        pC_title: "Experiencia premium",
+        pC_body: "Sesiones limpias, enfocadas—sin relleno.",
+
+        // Services
+        services_title: "Servicios",
+        services_lead: "Una clínica diseñada para atletas y personas activas.",
+        s1_title: "Rehabilitación de lesiones",
+        s1_body: "Rehab deportiva y ortopédica enfocada en carga, capacidad de tejido y fuerza.",
+        s2_title: "Retorno al deporte",
+        s2_body: "Progresiones por criterios, re-evaluaciones y un plan claro para volver a rendir.",
+        s3_title: "Análisis de movimiento",
+        s3_body: "Identificamos limitantes, asimetrías y patrones que afectan dolor y desempeño.",
+        s4_title: "Entrenamiento de rendimiento",
+        s4_body: "Fuerza y acondicionamiento para tu deporte: sprint, salto, cambios de dirección, resistencia.",
+
+        // Process
+        process_title: "Cómo funciona",
+        p1_title: "Valoración",
+        p1_body: "Diagnóstico del sistema de movimiento + medidas base para saber exactamente qué cambiar.",
+        p2_title: "Plan + Entrenamiento",
+        p2_body: "Fuerza progresiva + trabajo específico. Sabes qué hacer y por qué.",
+        p3_title: "Re-test",
+        p3_body: "Re-medimos, ajustamos y construimos el retorno al deporte / al running.",
+
+        // Contact
+        contact_title: "Contacto",
+        contact_lead: "Mándame mensaje por WhatsApp y te agendo.",
+        contact_h3: "PhysioPro — Tijuana",
+        hours_label: "Horario:",
+        hours_value: "Lun–Sáb (agrega tu horario)",
+        address_label: "Dirección:",
+        address_value: "(agrega colonia / dirección)",
+        cta_email: "Correo",
+
+        // Footer
+        footer_brand: "PhysioPro",
+        footer_loc: "Tijuana, MX"
+      }
+    };
+
+    function detectDefaultLang() {
+      const lang = (navigator.language || "").toLowerCase();
+      const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
+
+      const likelySpanish =
+        lang.startsWith("es") ||
+        tz.includes("tijuana") ||
+        tz.includes("mexico") ||
+        tz.includes("america/mexico_city");
+
+      return likelySpanish ? "es" : "en";
+    }
+
+    function setLang(lang) {
+      const dict = I18N[lang] || I18N.en;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.innerHTML = dict[key];
+      });
+
+      // Button state
+      document.getElementById("btnEN").classList.toggle("active", lang === "en");
+      document.getElementById("btnES").classList.toggle("active", lang === "es");
+
+      localStorage.setItem("pp_lang", lang);
+    }
+
+    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Init: saved preference > auto-detect
+    const saved = localStorage.getItem("pp_lang");
+    const initial = saved || detectDefaultLang();
+    setLang(initial);
+
+    // Toggle
+    document.getElementById("btnEN").addEventListener("click", () => setLang("en"));
+    document.getElementById("btnES").addEventListener("click", () => setLang("es"));
   </script>
 
 </body>
