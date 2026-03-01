@@ -518,3 +518,110 @@ h2 {
     height: 320px
   }
 }
+
+/* ===== About split layout ===== */
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 14px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .02));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .03);
+  color: var(--muted);
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.h3tight {
+  margin: 12px 0 6px;
+}
+
+.bullets {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.b {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .02);
+  border-radius: 14px;
+  padding: 12px 12px;
+}
+
+.b strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.b span {
+  color: var(--muted);
+}
+
+.mini-proof {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mp {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.mp span {
+  color: var(--muted);
+  display: block;
+  margin-top: 4px;
+}
+
+/* Toolkit CTA row */
+.toolkit-cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Deposit card */
+.deposit {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  background:
+    radial-gradient(900px 420px at 15% 20%, rgba(13, 79, 158, .18), transparent 60%),
+    radial-gradient(900px 420px at 85% 25%, rgba(247, 148, 29, .12), transparent 60%),
+    rgba(255, 255, 255, .02);
+}
+
+/* Footer links */
+.footlink {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(13, 79, 158, .55);
+  text-underline-offset: 4px;
+}
+
+.footlink:hover {
+  text-decoration-color: rgba(247, 148, 29, .95);
+}
