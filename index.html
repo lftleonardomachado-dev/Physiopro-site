@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PhysioPro | Rehab & Performance</title>
 
-  <!-- SEO (basic, premium trust) -->
+  <!-- SEO -->
   <meta name="description"
     content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
 
@@ -33,6 +33,7 @@
         <div class="navlinks">
           <a href="#services" data-i18n="nav_services">Services</a>
           <a href="#process" data-i18n="nav_process">How it works</a>
+          <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
           <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
 
@@ -113,19 +114,18 @@
         <!-- TRUST STRIP -->
         <div class="proof" style="margin-top:32px;">
           <div class="pill">
-            <strong>Clinical precision</strong>
-            <span>Movement assessment + objective re-testing.</span>
+            <strong data-i18n="t1_title">Clinical precision</strong>
+            <span data-i18n="t1_body">Movement assessment + objective re-testing.</span>
           </div>
           <div class="pill">
-            <strong>Performance mindset</strong>
-            <span>Strength, capacity, and return-to-sport criteria.</span>
+            <strong data-i18n="t2_title">Performance mindset</strong>
+            <span data-i18n="t2_body">Strength, capacity, and return-to-sport criteria.</span>
           </div>
           <div class="pill">
-            <strong>Premium sessions</strong>
-            <span>1:1 focus. Clear plan. Measurable progress.</span>
+            <strong data-i18n="t3_title">Premium sessions</strong>
+            <span data-i18n="t3_body">1:1 focus. Clear plan. Measurable progress.</span>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -164,27 +164,133 @@
       </div>
     </section>
 
+    <!-- REVIEWS -->
+    <section id="reviews" class="section alt">
+      <div class="container">
+        <h2 data-i18n="reviews_title">Reviews</h2>
+        <p class="lead" data-i18n="reviews_lead">What clients say about the PhysioPro experience.</p>
+
+        <div class="grid">
+          <div class="card review">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="r1_body">“Very professional. Clear plan, measurable progress, and I felt stronger every week.”
+            </p>
+            <div class="who" data-i18n="r1_who">— Athlete (Return to sport)</div>
+          </div>
+
+          <div class="card review">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="r2_body">“Premium experience. Clean clinic, focused sessions, and excellent communication.”
+            </p>
+            <div class="who" data-i18n="r2_who">— Client (Rehab)</div>
+          </div>
+
+          <div class="card review">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="r3_body">“Not just pain relief—performance. The strength progressions were exactly what I
+              needed.”</p>
+            <div class="who" data-i18n="r3_who">— Runner (Performance)</div>
+          </div>
+        </div>
+
+        <div class="review-cta">
+          <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps?q=PhysioPro+Tijuana"
+            data-i18n="reviews_cta">
+            Leave a Google Review
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <h2 data-i18n="contact_title">Contact</h2>
         <p class="lead" data-i18n="contact_lead">Message me on WhatsApp and I’ll get you scheduled.</p>
 
-        <div class="contact-card">
-          <div>
-            <h3 data-i18n="contact_h3">PhysioPro — Tijuana</h3>
-            <p class="small"><span data-i18n="hours_label">Hours:</span> <span data-i18n="hours_value">Mon–Sat (add your
-                hours)</span></p>
-            <p class="small"><span data-i18n="address_label">Address:</span> <span data-i18n="address_value">(add your
-                neighborhood / address)</span></p>
+        <div class="contact-grid">
+
+          <!-- LEFT: CONTACT DETAILS -->
+          <div class="contact-card">
+            <div>
+              <h3 data-i18n="contact_h3">PhysioPro — Tijuana</h3>
+
+              <div class="info-block">
+                <div class="label" data-i18n="hours_label">Hours:</div>
+                <div class="value" data-i18n="hours_value">
+                  Mon–Friday 8:00 AM – 7:00 PM (Last appointment 6:00 PM) • Saturday 8:00 AM – 2:00 PM (Last appointment
+                  1:00 PM)
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="label" data-i18n="address_label">Address:</div>
+                <div class="value">
+                  <a class="link" target="_blank" rel="noopener"
+                    href="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico"
+                    data-i18n="address_value">
+                    Jose María Velazco 2632, Zona Urbana Río Tijuana, 22010 Tijuana, B.C., Mexico
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
+                data-i18n="cta_whatsapp">WhatsApp</a>
+              <a class="btn ghost" href="tel:+526634875859" data-i18n="cta_call">Call</a>
+              <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com" data-i18n="cta_email">Email</a>
+            </div>
           </div>
 
-          <div class="contact-actions">
-            <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
-              data-i18n="cta_whatsapp">WhatsApp</a>
-            <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com" data-i18n="cta_email">Email</a>
+          <!-- RIGHT: PROMO FORM -->
+          <div class="form-card" id="promo">
+            <h3 data-i18n="promo_title">Get promotions & specials</h3>
+            <p class="small" data-i18n="promo_sub">Leave your info and I’ll message you when new specials drop.</p>
+
+            <!-- FREE form backend (no server): FormSubmit -->
+            <!-- IMPORTANT: First submit triggers an email confirmation from FormSubmit -->
+            <form class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="PhysioPro Promotions Lead" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next"
+                value="https://lftleonardomachado-dev.github.io/Physiopro-site/#thanks" />
+
+              <label class="f-label" for="name" data-i18n="f_name_label">Name</label>
+              <input class="f-input" id="name" name="name" type="text" required placeholder="Your name" />
+
+              <label class="f-label" for="phone" data-i18n="f_phone_label">Phone</label>
+              <input class="f-input" id="phone" name="phone" type="tel" required placeholder="+52..." />
+
+              <label class="f-label" for="email" data-i18n="f_email_label">Email</label>
+              <input class="f-input" id="email" name="email" type="email" required placeholder="you@email.com" />
+
+              <label class="consent">
+                <input type="checkbox" name="consent" required />
+                <span data-i18n="f_consent">I agree to receive messages about promotions and scheduling.</span>
+              </label>
+
+              <button class="btn primary full" type="submit" data-i18n="f_submit">Notify me</button>
+
+              <p class="tiny" data-i18n="f_note">No spam. You can opt out anytime.</p>
+            </form>
           </div>
+
         </div>
+
+        <!-- MAP -->
+        <div class="map-card">
+          <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
+          </iframe>
+        </div>
+
+        <!-- THANK YOU ANCHOR -->
+        <div id="thanks" class="thanks">
+          <strong data-i18n="thanks_title">Thanks!</strong>
+          <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
+        </div>
+
       </div>
     </section>
 
@@ -205,6 +311,7 @@
         tagline: "Recovery Starts Here",
         nav_services: "Services",
         nav_process: "How it works",
+        nav_reviews: "Reviews",
         nav_contact: "Contact",
         kicker: "Performance rehab • Strength • Return to sport",
         hero_title: "Performance-Based Physical Therapy",
@@ -232,6 +339,14 @@
         s4_title: "Performance Training",
         s4_body: "Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.",
 
+        // Trust strip
+        t1_title: "Clinical precision",
+        t1_body: "Movement assessment + objective re-testing.",
+        t2_title: "Performance mindset",
+        t2_body: "Strength, capacity, and return-to-sport criteria.",
+        t3_title: "Premium sessions",
+        t3_body: "1:1 focus. Clear plan. Measurable progress.",
+
         // Process
         process_title: "How it works",
         p1_title: "Evaluation",
@@ -241,15 +356,41 @@
         p3_title: "Re-test",
         p3_body: "We re-measure, adjust, and build toward return-to-sport / return-to-running.",
 
+        // Reviews
+        reviews_title: "Reviews",
+        reviews_lead: "What clients say about the PhysioPro experience.",
+        r1_body: "“Very professional. Clear plan, measurable progress, and I felt stronger every week.”",
+        r1_who: "— Athlete (Return to sport)",
+        r2_body: "“Premium experience. Clean clinic, focused sessions, and excellent communication.”",
+        r2_who: "— Client (Rehab)",
+        r3_body: "“Not just pain relief—performance. The strength progressions were exactly what I needed.”",
+        r3_who: "— Runner (Performance)",
+        reviews_cta: "Leave a Google Review",
+
         // Contact
         contact_title: "Contact",
         contact_lead: "Message me on WhatsApp and I’ll get you scheduled.",
         contact_h3: "PhysioPro — Tijuana",
         hours_label: "Hours:",
-        hours_value: "Monday–Friday 8:00am - 7:00 pm (Last appointment @ 6:00 pm) • Saturday 8:00 AM – 2:00 PM (Last appointment 1:00 PM)",
+        hours_value: "Mon–Friday 8:00 AM – 7:00 PM (Last appointment 6:00 PM) • Saturday 8:00 AM – 2:00 PM (Last appointment 1:00 PM)",
         address_label: "Address:",
         address_value: "Jose María Velazco 2632, Zona Urbana Río Tijuana, 22010 Tijuana, B.C., Mexico",
+        cta_call: "Call",
         cta_email: "Email",
+
+        // Promo form
+        promo_title: "Get promotions & specials",
+        promo_sub: "Leave your info and I’ll message you when new specials drop.",
+        f_name_label: "Name",
+        f_phone_label: "Phone",
+        f_email_label: "Email",
+        f_consent: "I agree to receive messages about promotions and scheduling.",
+        f_submit: "Notify me",
+        f_note: "No spam. You can opt out anytime.",
+
+        // Thanks
+        thanks_title: "Thanks!",
+        thanks_sub: "I received your info. I’ll reach out soon.",
 
         // Footer
         footer_brand: "PhysioPro",
@@ -261,6 +402,7 @@
         tagline: "Recovery Starts Here",
         nav_services: "Servicios",
         nav_process: "Cómo funciona",
+        nav_reviews: "Reseñas",
         nav_contact: "Contacto",
         kicker: "Rehab de rendimiento • Fuerza • Retorno al deporte",
         hero_title: "Fisioterapia Basada en Rendimiento",
@@ -288,6 +430,14 @@
         s4_title: "Entrenamiento de rendimiento",
         s4_body: "Fuerza y acondicionamiento para tu deporte: sprint, salto, cambios de dirección, resistencia.",
 
+        // Trust strip
+        t1_title: "Precisión clínica",
+        t1_body: "Evaluación de movimiento + re-test objetivo.",
+        t2_title: "Mentalidad de rendimiento",
+        t2_body: "Fuerza, capacidad y criterios para retorno al deporte.",
+        t3_title: "Sesiones premium",
+        t3_body: "Enfoque 1:1. Plan claro. Progreso medible.",
+
         // Process
         process_title: "Cómo funciona",
         p1_title: "Valoración",
@@ -297,6 +447,17 @@
         p3_title: "Re-test",
         p3_body: "Re-medimos, ajustamos y construimos el retorno al deporte / al running.",
 
+        // Reviews
+        reviews_title: "Reseñas",
+        reviews_lead: "Lo que dicen los clientes sobre la experiencia PhysioPro.",
+        r1_body: "“Muy profesional. Plan claro, progreso medible y cada semana me sentí más fuerte.”",
+        r1_who: "— Atleta (Retorno al deporte)",
+        r2_body: "“Experiencia premium. Clínica limpia, sesiones enfocadas y excelente comunicación.”",
+        r2_who: "— Cliente (Rehab)",
+        r3_body: "“No solo dolor—rendimiento. La progresión de fuerza fue justo lo que necesitaba.”",
+        r3_who: "— Runner (Rendimiento)",
+        reviews_cta: "Dejar reseña en Google",
+
         // Contact
         contact_title: "Contacto",
         contact_lead: "Mándame mensaje por WhatsApp y te agendo.",
@@ -305,7 +466,22 @@
         hours_value: "Lunes a Viernes 8:00 AM – 7:00 PM (Última cita 6:00 PM) • Sábado 8:00 AM – 2:00 PM (Última cita 1:00 PM)",
         address_label: "Dirección:",
         address_value: "José María Velazco 2632, Zona Urbana Río Tijuana, 22010 Tijuana, B.C., México",
+        cta_call: "Llamar",
         cta_email: "Correo",
+
+        // Promo form
+        promo_title: "Promociones y especiales",
+        promo_sub: "Deja tu info y te aviso cuando salgan nuevos especiales.",
+        f_name_label: "Nombre",
+        f_phone_label: "Teléfono",
+        f_email_label: "Correo",
+        f_consent: "Acepto recibir mensajes sobre promociones y agendar citas.",
+        f_submit: "Avísame",
+        f_note: "Sin spam. Te puedes dar de baja cuando quieras.",
+
+        // Thanks
+        thanks_title: "¡Gracias!",
+        thanks_sub: "Recibí tu info. Te contacto pronto.",
 
         // Footer
         footer_brand: "PhysioPro",
@@ -335,7 +511,6 @@
         if (dict[key]) el.innerHTML = dict[key];
       });
 
-      // Button state
       document.getElementById("btnEN").classList.toggle("active", lang === "en");
       document.getElementById("btnES").classList.toggle("active", lang === "es");
 
