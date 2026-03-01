@@ -408,62 +408,70 @@
             <p class="small" data-i18n="promo_sub">Leave your info. I’ll send the toolkit and help you book.</p>
 
             <!-- FREE form backend (no server): FormSubmit -->
-            <!-- IMPORTANT: First submit triggers an email confirmation from FormSubmit -->
             <form class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="PhysioPro Lead" />
+
+              <!-- FormSubmit Config -->
+              <input type="hidden" name="_subject" value="New PhysioPro Website Lead" />
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_next"
                 value="https://lftleonardomachado-dev.github.io/Physiopro-site/#thanks" />
 
-              <label class="f-label" for="name" data-i18n="f_name_label">Name</label>
-              <input class="f-input" id="name" name="name" type="text" required placeholder="Your name" />
+              <!-- Name -->
+              <label class="f-label" for="name">Name</label>
+              <input class="f-input" id="name" name="Name" type="text" placeholder="Your full name" required />
 
-              <label class="f-label" for="phone" data-i18n="f_phone_label">Phone</label>
-              <input class="f-input" id="phone" name="phone" type="tel" required placeholder="+52..." />
+              <!-- Phone -->
+              <label class="f-label" for="phone">Phone</label>
+              <input class="f-input" id="phone" name="Phone" type="tel" placeholder="+52 663..." required />
 
-              <label class="f-label" for="email" data-i18n="f_email_label">Email</label>
-              <input class="f-input" id="email" name="email" type="email" required placeholder="you@email.com" />
+              <!-- Email -->
+              <label class="f-label" for="email">Email</label>
+              <input class="f-input" id="email" name="Email" type="email" placeholder="you@email.com" required />
 
-              <label class="f-label" for="goal" data-i18n="f_goal_label">Goal</label>
-              <select class="f-input" id="goal" name="goal" required>
-                <option value="" selected disabled data-i18n="f_goal_placeholder">Select one…</option>
-                <option value="Injury rehab" data-i18n="f_goal_1">Injury rehab</option>
-                <option value="Return to sport" data-i18n="f_goal_2">Return to sport</option>
-                <option value="Running pain" data-i18n="f_goal_3">Running pain</option>
-                <option value="Performance training" data-i18n="f_goal_4">Performance training</option>
+              <!-- Goal -->
+              <label class="f-label" for="goal">Primary Goal</label>
+              <select class="f-input" id="goal" name="Goal" required>
+                <option value="" selected disabled>Select one</option>
+                <option value="Injury Rehab">Injury Rehab</option>
+                <option value="Return to Sport">Return to Sport</option>
+                <option value="Running Pain">Running Pain</option>
+                <option value="Performance Training">Performance Training</option>
               </select>
 
+              <!-- Consent -->
               <label class="consent">
-                <input type="checkbox" name="consent" required />
-                <span data-i18n="f_consent">I agree to receive messages about promotions and scheduling.</span>
+                <input type="checkbox" name="Consent" value="Agreed" required />
+                <span>
+                  I agree to receive scheduling and service-related messages.
+                </span>
               </label>
 
-              <button class="btn primary full" type="submit" data-i18n="f_submit">Notify me</button>
+              <!-- Submit -->
+              <button class="btn primary full" type="submit">
+                Get the Toolkit + Book
+              </button>
 
-              <p class="tiny" data-i18n="f_note">No spam. You can opt out anytime.</p>
-              <p class="tiny" style="margin-top:8px">
-                <a class="link" href="#privacy" data-i18n="footer_privacy">Privacy</a> •
-                <a class="link" href="#consent" data-i18n="footer_consent">Consent</a>
+              <p class="tiny">
+                No spam. You can unsubscribe anytime.
               </p>
+
             </form>
+
+            <!-- MAP -->
+            <div class="map-card">
+              <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
+              </iframe>
+            </div>
+
+            <!-- THANK YOU ANCHOR -->
+            <div id="thanks" class="thanks">
+              <strong data-i18n="thanks_title">Thanks!</strong>
+              <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
+            </div>
+
           </div>
-
-        </div>
-
-        <!-- MAP -->
-        <div class="map-card">
-          <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
-          </iframe>
-        </div>
-
-        <!-- THANK YOU ANCHOR -->
-        <div id="thanks" class="thanks">
-          <strong data-i18n="thanks_title">Thanks!</strong>
-          <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
-        </div>
-
-      </div>
     </section>
 
     <!-- PRIVACY -->
