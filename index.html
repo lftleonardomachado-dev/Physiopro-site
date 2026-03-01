@@ -10,10 +10,43 @@
   <meta name="description"
     content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
 
+  <!-- Open Graph (share previews) -->
+  <meta property="og:title" content="PhysioPro | Rehab & Performance" />
+  <meta property="og:description"
+    content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.jpg" />
+
+  <!-- Local SEO -->
+  <meta name="geo.placename" content="Tijuana, Baja California, Mexico" />
+  <meta name="geo.region" content="MX-BCN" />
+  <meta name="robots" content="index,follow" />
+
   <!-- If your logo is PNG, change logo.jpg -> logo.png -->
   <link rel="icon" href="images/logo.jpg" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PhysicalTherapy",
+    "name": "PhysioPro",
+    "image": "images/logo.jpg",
+    "telephone": "+52 663 487 5859",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jose María Velazco 2632, Zona Urbana Río Tijuana",
+      "postalCode": "22010",
+      "addressLocality": "Tijuana",
+      "addressRegion": "BC",
+      "addressCountry": "MX"
+    },
+    "areaServed": ["Tijuana", "San Diego"],
+    "url": "https://lftleonardomachado-dev.github.io/Physiopro-site/"
+  }
+  </script>
 </head>
 
 <body>
@@ -31,8 +64,11 @@
         </div>
 
         <div class="navlinks">
+          <a href="#about" data-i18n="nav_about">About</a>
           <a href="#services" data-i18n="nav_services">Services</a>
           <a href="#process" data-i18n="nav_process">How it works</a>
+          <a href="#toolkit" data-i18n="nav_toolkit">Free toolkit</a>
+          <a href="#deposit" data-i18n="nav_deposit">Deposit</a>
           <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
           <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
@@ -58,7 +94,7 @@
         <div class="cta">
           <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
             data-i18n="cta_whatsapp">WhatsApp</a>
-          <a class="btn ghost" href="#contact" data-i18n="cta_book">Book evaluation</a>
+          <a class="btn ghost" href="#deposit" data-i18n="cta_book">Book evaluation</a>
         </div>
 
         <div class="proof">
@@ -80,6 +116,89 @@
   </header>
 
   <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 data-i18n="about_title">About PhysioPro</h2>
+            <p class="lead" data-i18n="about_lead">
+              Rehab built around strength, objective testing, and a clear return-to-performance plan.
+            </p>
+
+            <div class="bullets">
+              <div class="b">
+                <strong data-i18n="about_b1_t">Movement-system diagnosis</strong>
+                <span data-i18n="about_b1_b">We identify the limiting factor, not just the painful area.</span>
+              </div>
+              <div class="b">
+                <strong data-i18n="about_b2_t">Strength progression</strong>
+                <span data-i18n="about_b2_b">Load management + capacity building that transfers to sport.</span>
+              </div>
+              <div class="b">
+                <strong data-i18n="about_b3_t">Measurable outcomes</strong>
+                <span data-i18n="about_b3_b">We re-test so you can see real progress—on purpose.</span>
+              </div>
+            </div>
+
+            <div class="cta" style="margin-top:16px">
+              <a class="btn primary" href="#deposit" data-i18n="about_cta1">Reserve with deposit</a>
+              <a class="btn ghost" href="#toolkit" data-i18n="about_cta2">Get free toolkit</a>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="badge" data-i18n="about_badge">Founder / PT</div>
+            <h3 class="h3tight" data-i18n="about_name">Leonardo Machado</h3>
+            <p class="small" data-i18n="about_cred">
+              Physical Therapist • Performance Rehab • Tijuana
+            </p>
+
+            <div class="mini-proof">
+              <div class="mp">
+                <strong data-i18n="about_mp1_t">Athlete-first rehab</strong>
+                <span data-i18n="about_mp1_b">Return to sport and performance.</span>
+              </div>
+              <div class="mp">
+                <strong data-i18n="about_mp2_t">Premium 1:1 sessions</strong>
+                <span data-i18n="about_mp2_b">Focused time, clear plan.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TOOLKIT (Lead Magnet) -->
+    <section id="toolkit" class="section alt">
+      <div class="container">
+        <h2 data-i18n="toolkit_title">Free Toolkit</h2>
+        <p class="lead" data-i18n="toolkit_lead">
+          Download a simple guide to reduce injury risk and train smarter.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3 data-i18n="tk1_t">Runner’s Injury Prevention</h3>
+            <p data-i18n="tk1_b">Warm-up, strength basics, and common mistakes that keep runners stuck.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="tk2_t">Knee Pain Starter Plan</h3>
+            <p data-i18n="tk2_b">3-step plan to rebuild tolerance and strength safely.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="tk3_t">Return-to-Sport Checklist</h3>
+            <p data-i18n="tk3_b">The basics we re-test before you go back to full intensity.</p>
+          </div>
+        </div>
+
+        <div class="toolkit-cta">
+          <a class="btn primary" href="#promo" data-i18n="toolkit_cta">Send me the toolkit</a>
+          <span class="tiny" data-i18n="toolkit_note">You’ll receive it by email/WhatsApp after you submit.</span>
+        </div>
+      </div>
+    </section>
 
     <!-- SERVICES -->
     <section id="services" class="section">
@@ -164,6 +283,46 @@
       </div>
     </section>
 
+    <!-- DEPOSIT BOOKING -->
+    <section id="deposit" class="section">
+      <div class="container">
+        <div class="deposit">
+          <div>
+            <h2 data-i18n="deposit_title">Reserve Your Evaluation</h2>
+            <p class="lead" data-i18n="deposit_lead">
+              Deposit-based booking reduces no-shows and locks your time. You’ll receive a confirmation message.
+            </p>
+
+            <div class="grid" style="margin-top:10px">
+              <div class="card">
+                <h3 data-i18n="dep1_t">1) Pay deposit</h3>
+                <p data-i18n="dep1_b">Secure your slot with a deposit.</p>
+              </div>
+              <div class="card">
+                <h3 data-i18n="dep2_t">2) WhatsApp confirmation</h3>
+                <p data-i18n="dep2_b">We confirm the day/time and what to bring.</p>
+              </div>
+              <div class="card">
+                <h3 data-i18n="dep3_t">3) Evaluation + plan</h3>
+                <p data-i18n="dep3_b">Assessment + clear plan + next steps.</p>
+              </div>
+            </div>
+
+            <div class="cta" style="margin-top:16px">
+              <!-- TODO: Replace href="#" with your real deposit link (MercadoPago / Stripe / etc.) -->
+              <a class="btn primary" href="#" data-i18n="deposit_pay">Pay deposit</a>
+              <a class="btn ghost" href="https://wa.me/526634875859" target="_blank" rel="noopener"
+                data-i18n="deposit_help">I have questions (WhatsApp)</a>
+            </div>
+
+            <p class="tiny" style="margin-top:10px" data-i18n="deposit_policy">
+              Deposit is applied to your evaluation. Reschedules require notice. Ask on WhatsApp for details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- REVIEWS -->
     <section id="reviews" class="section alt">
       <div class="container">
@@ -243,15 +402,15 @@
             </div>
           </div>
 
-          <!-- RIGHT: PROMO FORM -->
+          <!-- RIGHT: LEAD FORM -->
           <div class="form-card" id="promo">
-            <h3 data-i18n="promo_title">Get promotions & specials</h3>
-            <p class="small" data-i18n="promo_sub">Leave your info and I’ll message you when new specials drop.</p>
+            <h3 data-i18n="promo_title">Get the free toolkit + schedule</h3>
+            <p class="small" data-i18n="promo_sub">Leave your info. I’ll send the toolkit and help you book.</p>
 
             <!-- FREE form backend (no server): FormSubmit -->
             <!-- IMPORTANT: First submit triggers an email confirmation from FormSubmit -->
             <form class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="PhysioPro Promotions Lead" />
+              <input type="hidden" name="_subject" value="PhysioPro Lead" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next"
                 value="https://lftleonardomachado-dev.github.io/Physiopro-site/#thanks" />
@@ -265,6 +424,15 @@
               <label class="f-label" for="email" data-i18n="f_email_label">Email</label>
               <input class="f-input" id="email" name="email" type="email" required placeholder="you@email.com" />
 
+              <label class="f-label" for="goal" data-i18n="f_goal_label">Goal</label>
+              <select class="f-input" id="goal" name="goal" required>
+                <option value="" selected disabled data-i18n="f_goal_placeholder">Select one…</option>
+                <option value="Injury rehab" data-i18n="f_goal_1">Injury rehab</option>
+                <option value="Return to sport" data-i18n="f_goal_2">Return to sport</option>
+                <option value="Running pain" data-i18n="f_goal_3">Running pain</option>
+                <option value="Performance training" data-i18n="f_goal_4">Performance training</option>
+              </select>
+
               <label class="consent">
                 <input type="checkbox" name="consent" required />
                 <span data-i18n="f_consent">I agree to receive messages about promotions and scheduling.</span>
@@ -273,6 +441,10 @@
               <button class="btn primary full" type="submit" data-i18n="f_submit">Notify me</button>
 
               <p class="tiny" data-i18n="f_note">No spam. You can opt out anytime.</p>
+              <p class="tiny" style="margin-top:8px">
+                <a class="link" href="#privacy" data-i18n="footer_privacy">Privacy</a> •
+                <a class="link" href="#consent" data-i18n="footer_consent">Consent</a>
+              </p>
             </form>
           </div>
 
@@ -294,12 +466,47 @@
       </div>
     </section>
 
+    <!-- PRIVACY -->
+    <section id="privacy" class="section alt">
+      <div class="container">
+        <h2 data-i18n="privacy_title">Privacy Policy (Summary)</h2>
+        <p class="lead" data-i18n="privacy_lead">
+          We collect your name, phone, email, and goals only to schedule and provide services.
+        </p>
+        <div class="card">
+          <p data-i18n="privacy_body">
+            Your data is used for scheduling, follow-up, and clinic communication. We do not sell your information.
+            You can request deletion anytime by messaging WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSENT -->
+    <section id="consent" class="section">
+      <div class="container">
+        <h2 data-i18n="consent_title">Consent</h2>
+        <p class="lead" data-i18n="consent_lead">
+          By submitting your info you agree to receive messages about scheduling and your requested resources.
+        </p>
+        <div class="card">
+          <p data-i18n="consent_body">
+            You may opt out anytime. Message “STOP” on WhatsApp or email us to unsubscribe.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="y"></span> <span data-i18n="footer_brand">PhysioPro</span> • <span data-i18n="footer_loc">Tijuana,
-          MX</span></p>
+      <p>
+        © <span id="y"></span> <span data-i18n="footer_brand">PhysioPro</span> •
+        <span data-i18n="footer_loc">Tijuana, MX</span> •
+        <a class="footlink" href="#privacy" data-i18n="footer_privacy">Privacy</a> •
+        <a class="footlink" href="#consent" data-i18n="footer_consent">Consent</a>
+      </p>
     </div>
   </footer>
 
@@ -309,8 +516,11 @@
       en: {
         // Nav + hero
         tagline: "Recovery Starts Here",
+        nav_about: "About",
         nav_services: "Services",
         nav_process: "How it works",
+        nav_toolkit: "Free toolkit",
+        nav_deposit: "Deposit",
         nav_reviews: "Reviews",
         nav_contact: "Contact",
         kicker: "Performance rehab • Strength • Return to sport",
@@ -326,6 +536,37 @@
         pB_body: "Load management + performance transfer.",
         pC_title: "Premium experience",
         pC_body: "Clean, focused sessions—no fluff.",
+
+        // About
+        about_title: "About PhysioPro",
+        about_lead: "Rehab built around strength, objective testing, and a clear return-to-performance plan.",
+        about_b1_t: "Movement-system diagnosis",
+        about_b1_b: "We identify the limiting factor, not just the painful area.",
+        about_b2_t: "Strength progression",
+        about_b2_b: "Load management + capacity building that transfers to sport.",
+        about_b3_t: "Measurable outcomes",
+        about_b3_b: "We re-test so you can see real progress—on purpose.",
+        about_cta1: "Reserve with deposit",
+        about_cta2: "Get free toolkit",
+        about_badge: "Founder / PT",
+        about_name: "Leonardo Machado",
+        about_cred: "Physical Therapist • Performance Rehab • Tijuana",
+        about_mp1_t: "Athlete-first rehab",
+        about_mp1_b: "Return to sport and performance.",
+        about_mp2_t: "Premium 1:1 sessions",
+        about_mp2_b: "Focused time, clear plan.",
+
+        // Toolkit
+        toolkit_title: "Free Toolkit",
+        toolkit_lead: "Download a simple guide to reduce injury risk and train smarter.",
+        tk1_t: "Runner’s Injury Prevention",
+        tk1_b: "Warm-up, strength basics, and common mistakes that keep runners stuck.",
+        tk2_t: "Knee Pain Starter Plan",
+        tk2_b: "3-step plan to rebuild tolerance and strength safely.",
+        tk3_t: "Return-to-Sport Checklist",
+        tk3_b: "The basics we re-test before you go back to full intensity.",
+        toolkit_cta: "Send me the toolkit",
+        toolkit_note: "You’ll receive it by email/WhatsApp after you submit.",
 
         // Services
         services_title: "Services",
@@ -356,6 +597,19 @@
         p3_title: "Re-test",
         p3_body: "We re-measure, adjust, and build toward return-to-sport / return-to-running.",
 
+        // Deposit
+        deposit_title: "Reserve Your Evaluation",
+        deposit_lead: "Deposit-based booking reduces no-shows and locks your time. You’ll receive a confirmation message.",
+        dep1_t: "1) Pay deposit",
+        dep1_b: "Secure your slot with a deposit.",
+        dep2_t: "2) WhatsApp confirmation",
+        dep2_b: "We confirm the day/time and what to bring.",
+        dep3_t: "3) Evaluation + plan",
+        dep3_b: "Assessment + clear plan + next steps.",
+        deposit_pay: "Pay deposit",
+        deposit_help: "I have questions (WhatsApp)",
+        deposit_policy: "Deposit is applied to your evaluation. Reschedules require notice. Ask on WhatsApp for details.",
+
         // Reviews
         reviews_title: "Reviews",
         reviews_lead: "What clients say about the PhysioPro experience.",
@@ -378,19 +632,35 @@
         cta_call: "Call",
         cta_email: "Email",
 
-        // Promo form
-        promo_title: "Get promotions & specials",
-        promo_sub: "Leave your info and I’ll message you when new specials drop.",
+        // Form
+        promo_title: "Get the free toolkit + schedule",
+        promo_sub: "Leave your info. I’ll send the toolkit and help you book.",
         f_name_label: "Name",
         f_phone_label: "Phone",
         f_email_label: "Email",
-        f_consent: "I agree to receive messages about promotions and scheduling.",
-        f_submit: "Notify me",
+        f_goal_label: "Goal",
+        f_goal_placeholder: "Select one…",
+        f_goal_1: "Injury rehab",
+        f_goal_2: "Return to sport",
+        f_goal_3: "Running pain",
+        f_goal_4: "Performance training",
+        f_consent: "I agree to receive messages about scheduling and my requested resources.",
+        f_submit: "Send",
         f_note: "No spam. You can opt out anytime.",
 
         // Thanks
         thanks_title: "Thanks!",
         thanks_sub: "I received your info. I’ll reach out soon.",
+
+        // Privacy + Consent
+        footer_privacy: "Privacy",
+        footer_consent: "Consent",
+        privacy_title: "Privacy Policy (Summary)",
+        privacy_lead: "We collect your name, phone, email, and goals only to schedule and provide services.",
+        privacy_body: "Your data is used for scheduling, follow-up, and clinic communication. We do not sell your information. You can request deletion anytime by messaging WhatsApp.",
+        consent_title: "Consent",
+        consent_lead: "By submitting your info you agree to receive messages about scheduling and your requested resources.",
+        consent_body: "You may opt out anytime. Message “STOP” on WhatsApp or email us to unsubscribe.",
 
         // Footer
         footer_brand: "PhysioPro",
@@ -399,9 +669,12 @@
 
       es: {
         // Nav + hero
-        tagline: "Recovery Starts Here",
+        tagline: "Tu recuperación empieza aquí",
+        nav_about: "Acerca de",
         nav_services: "Servicios",
         nav_process: "Cómo funciona",
+        nav_toolkit: "Guía gratis",
+        nav_deposit: "Depósito",
         nav_reviews: "Reseñas",
         nav_contact: "Contacto",
         kicker: "Rehab de rendimiento • Fuerza • Retorno al deporte",
@@ -417,6 +690,37 @@
         pB_body: "Manejo de carga + transferencia al rendimiento.",
         pC_title: "Experiencia premium",
         pC_body: "Sesiones limpias, enfocadas—sin relleno.",
+
+        // About
+        about_title: "Acerca de PhysioPro",
+        about_lead: "Rehab basado en fuerza, evaluación objetiva y un plan claro para volver a rendir.",
+        about_b1_t: "Diagnóstico del sistema de movimiento",
+        about_b1_b: "Identificamos el factor limitante, no solo el área con dolor.",
+        about_b2_t: "Progresión de fuerza",
+        about_b2_b: "Manejo de carga + capacidad que se transfiere a tu deporte.",
+        about_b3_t: "Resultados medibles",
+        about_b3_b: "Re-medimos para que veas progreso real.",
+        about_cta1: "Reservar con depósito",
+        about_cta2: "Obtener guía gratis",
+        about_badge: "Fundador / FT",
+        about_name: "Leonardo Machado",
+        about_cred: "Fisioterapeuta • Rehab de rendimiento • Tijuana",
+        about_mp1_t: "Rehab para atletas",
+        about_mp1_b: "Retorno al deporte y rendimiento.",
+        about_mp2_t: "Sesiones premium 1:1",
+        about_mp2_b: "Tiempo enfocado, plan claro.",
+
+        // Toolkit
+        toolkit_title: "Guía Gratis",
+        toolkit_lead: "Descarga una guía simple para reducir riesgo de lesión y entrenar mejor.",
+        tk1_t: "Prevención de lesiones para runners",
+        tk1_b: "Calentamiento, fuerza básica y errores comunes.",
+        tk2_t: "Plan inicial para dolor de rodilla",
+        tk2_b: "3 pasos para recuperar tolerancia y fuerza con seguridad.",
+        tk3_t: "Checklist de retorno al deporte",
+        tk3_b: "Lo básico que re-evaluamos antes de volver a intensidad.",
+        toolkit_cta: "Envíame la guía",
+        toolkit_note: "La recibirás por email/WhatsApp al enviar tu información.",
 
         // Services
         services_title: "Servicios",
@@ -447,6 +751,19 @@
         p3_title: "Re-test",
         p3_body: "Re-medimos, ajustamos y construimos el retorno al deporte / al running.",
 
+        // Deposit
+        deposit_title: "Reserva tu valoración",
+        deposit_lead: "El depósito reduce ausencias y asegura tu horario. Recibirás confirmación por WhatsApp.",
+        dep1_t: "1) Paga el depósito",
+        dep1_b: "Asegura tu espacio con un depósito.",
+        dep2_t: "2) Confirmación por WhatsApp",
+        dep2_b: "Confirmamos día/hora y qué traer.",
+        dep3_t: "3) Valoración + plan",
+        dep3_b: "Evaluación + plan claro + siguientes pasos.",
+        deposit_pay: "Pagar depósito",
+        deposit_help: "Tengo dudas (WhatsApp)",
+        deposit_policy: "El depósito se aplica a tu valoración. Reagendar requiere aviso. Pregunta por WhatsApp.",
+
         // Reviews
         reviews_title: "Reseñas",
         reviews_lead: "Lo que dicen los clientes sobre la experiencia PhysioPro.",
@@ -469,19 +786,35 @@
         cta_call: "Llamar",
         cta_email: "Correo",
 
-        // Promo form
-        promo_title: "Promociones y especiales",
-        promo_sub: "Deja tu info y te aviso cuando salgan nuevos especiales.",
+        // Form
+        promo_title: "Obtén la guía gratis + agenda",
+        promo_sub: "Deja tu info. Te envío la guía y te ayudo a agendar.",
         f_name_label: "Nombre",
         f_phone_label: "Teléfono",
         f_email_label: "Correo",
-        f_consent: "Acepto recibir mensajes sobre promociones y agendar citas.",
-        f_submit: "Avísame",
+        f_goal_label: "Objetivo",
+        f_goal_placeholder: "Selecciona uno…",
+        f_goal_1: "Rehabilitación de lesión",
+        f_goal_2: "Retorno al deporte",
+        f_goal_3: "Dolor al correr",
+        f_goal_4: "Entrenamiento de rendimiento",
+        f_consent: "Acepto recibir mensajes sobre agenda y recursos solicitados.",
+        f_submit: "Enviar",
         f_note: "Sin spam. Te puedes dar de baja cuando quieras.",
 
         // Thanks
         thanks_title: "¡Gracias!",
         thanks_sub: "Recibí tu info. Te contacto pronto.",
+
+        // Privacy + Consent
+        footer_privacy: "Privacidad",
+        footer_consent: "Consentimiento",
+        privacy_title: "Política de Privacidad (Resumen)",
+        privacy_lead: "Recopilamos nombre, teléfono, correo y objetivo solo para agendar y dar seguimiento.",
+        privacy_body: "Tus datos se usan para agenda, seguimiento y comunicación clínica. No vendemos tu información. Puedes solicitar eliminación cuando quieras por WhatsApp.",
+        consent_title: "Consentimiento",
+        consent_lead: "Al enviar tu info aceptas recibir mensajes sobre agenda y recursos solicitados.",
+        consent_body: "Puedes darte de baja cuando quieras. Envía “STOP” por WhatsApp o escríbenos por correo.",
 
         // Footer
         footer_brand: "PhysioPro",
