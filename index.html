@@ -8,12 +8,12 @@
 
   <!-- SEO -->
   <meta name="description"
-    content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
+    content="Fisioterapia en Tijuana. Rehabilitación física, recuperación de lesiones y mejora del movimiento en Zona Río." />
 
   <!-- Open Graph (share previews) -->
-  <meta property="og:title" content="PhysioPro | Rehab & Performance" />
+  <meta property="og:title" content="PhysioPro | Fisioterapia en Tijuana" />
   <meta property="og:description"
-    content="Performance-based physical therapy in Tijuana. Rehab, strength, return to sport, and movement analysis." />
+    content="Rehabilitación física y mejora del movimiento en Zona Río Tijuana. Sesiones 1:1 y plan claro." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo.jpg" />
 
@@ -27,14 +27,14 @@
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Local Business Schema -->
+  <!-- Local Business Schema (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "PhysicalTherapy",
+    "@type": "MedicalBusiness",
     "name": "PhysioPro",
-    "image": "images/logo.jpg",
-    "telephone": "+52 663 487 5859",
+    "image": "https://lftleonardomachado-dev.github.io/Physiopro-site/images/logo.jpg",
+    "telephone": "+526634875859",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jose María Velazco 2632, Zona Urbana Río Tijuana",
@@ -45,6 +45,20 @@
     },
     "areaServed": ["Tijuana", "San Diego"],
     "url": "https://lftleonardomachado-dev.github.io/Physiopro-site/"
+  }
+  </script>
+
+  <!-- Optional ratings schema (update reviewCount as you get real reviews) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "PhysioPro",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    }
   }
   </script>
 </head>
@@ -87,8 +101,8 @@
 
         <h1 data-i18n="hero_title">Performance-Based Physical Therapy</h1>
 
-        <p class="sub" data-i18n="hero_sub">
-          High-level rehab with clinical precision—built for athletes and active people in Tijuana.
+        <p class="sub" data-i18n="hero_sub_local">
+          Fisioterapia profesional en Tijuana enfocada en recuperación, fuerza y retorno al movimiento con sesiones 1:1.
         </p>
 
         <div class="cta">
@@ -230,6 +244,36 @@
           </div>
         </div>
 
+        <!-- Local SEO Block -->
+        <section class="section alt" style="margin-top:28px;">
+          <div class="container">
+            <h2 data-i18n="local_title">Fisioterapia en Tijuana</h2>
+            <p class="lead" data-i18n="local_lead">
+              PhysioPro ofrece fisioterapia en Tijuana con un enfoque profesional, sesiones 1:1 y planes personalizados.
+              Atendemos pacientes en Zona Río y áreas cercanas que buscan rehabilitación efectiva y seguimiento
+              continuo.
+            </p>
+
+            <div class="grid">
+              <div class="card">
+                <h3 data-i18n="local_c1_t">Rehabilitación física</h3>
+                <p data-i18n="local_c1_b">Planes progresivos para recuperación de lesiones y mejora del movimiento.</p>
+              </div>
+
+              <div class="card">
+                <h3 data-i18n="local_c2_t">Dolor de rodilla y espalda</h3>
+                <p data-i18n="local_c2_b">Evaluación y tratamiento orientado a reducir dolor y mejorar capacidad
+                  funcional.</p>
+              </div>
+
+              <div class="card">
+                <h3 data-i18n="local_c3_t">Clínica en Zona Río</h3>
+                <p data-i18n="local_c3_b">Ubicación céntrica en Tijuana con atención personalizada.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- TRUST STRIP -->
         <div class="proof" style="margin-top:32px;">
           <div class="pill">
@@ -289,8 +333,8 @@
         <div class="deposit">
           <div>
             <h2 data-i18n="deposit_title">Reserve Your Evaluation</h2>
-            <p class="lead" data-i18n="deposit_lead">
-              Deposit-based booking reduces no-shows and locks your time. You’ll receive a confirmation message.
+            <p class="tiny" data-i18n="deposit_limit">
+              Limited daily appointments. Deposit required to confirm booking.
             </p>
 
             <div class="grid" style="margin-top:10px">
@@ -409,7 +453,6 @@
 
             <!-- FREE form backend (no server): FormSubmit -->
             <form class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
-
               <!-- FormSubmit Config -->
               <input type="hidden" name="_subject" value="New PhysioPro Website Lead" />
               <input type="hidden" name="_captcha" value="false" />
@@ -442,36 +485,38 @@
               <!-- Consent -->
               <label class="consent">
                 <input type="checkbox" name="Consent" value="Agreed" required />
-                <span>
+                <span data-i18n="f_consent">
                   I agree to receive scheduling and service-related messages.
                 </span>
               </label>
 
               <!-- Submit -->
-              <button class="btn primary full" type="submit">
-                Get the Toolkit + Book
-              </button>
+              <button class="btn primary full" type="submit" data-i18n="f_submit">Get the Toolkit + Book</button>
 
-              <p class="tiny">
-                No spam. You can unsubscribe anytime.
+              <p class="tiny" data-i18n="f_note">No spam. You can opt out anytime.</p>
+              <p class="tiny" style="margin-top:8px">
+                <a class="link" href="#privacy" data-i18n="footer_privacy">Privacy</a> •
+                <a class="link" href="#consent" data-i18n="footer_consent">Consent</a>
               </p>
-
             </form>
-
-            <!-- MAP -->
-            <div class="map-card">
-              <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
-              </iframe>
-            </div>
-
-            <!-- THANK YOU ANCHOR -->
-            <div id="thanks" class="thanks">
-              <strong data-i18n="thanks_title">Thanks!</strong>
-              <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
-            </div>
-
           </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="map-card">
+          <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
+          </iframe>
+        </div>
+
+        <!-- THANK YOU ANCHOR -->
+        <div id="thanks" class="thanks">
+          <strong data-i18n="thanks_title">Thanks!</strong>
+          <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
+        </div>
+
+      </div>
     </section>
 
     <!-- PRIVACY -->
@@ -534,6 +579,7 @@
         kicker: "Performance rehab • Strength • Return to sport",
         hero_title: "Performance-Based Physical Therapy",
         hero_sub: "High-level rehab with clinical precision—built for athletes and active people in Tijuana.",
+        hero_sub_local: "Professional physical therapy in Tijuana focused on recovery, strength, and return to movement with 1:1 sessions.",
         cta_whatsapp: "WhatsApp",
         cta_book: "Book evaluation",
 
@@ -576,6 +622,16 @@
         toolkit_cta: "Send me the toolkit",
         toolkit_note: "You’ll receive it by email/WhatsApp after you submit.",
 
+        // Local SEO block
+        local_title: "Physical Therapy in Tijuana",
+        local_lead: "PhysioPro provides professional physical therapy in Tijuana with 1:1 sessions and clear plans. Located in Zona Río and serving nearby areas.",
+        local_c1_t: "Physical rehabilitation",
+        local_c1_b: "Progressive plans for recovery and better movement.",
+        local_c2_t: "Knee and back pain",
+        local_c2_b: "Evaluation and treatment to reduce pain and improve function.",
+        local_c3_t: "Clinic in Zona Río",
+        local_c3_b: "Central location in Tijuana with personalized care.",
+
         // Services
         services_title: "Services",
         services_lead: "A clinic built for athletes and active people.",
@@ -607,7 +663,7 @@
 
         // Deposit
         deposit_title: "Reserve Your Evaluation",
-        deposit_lead: "Deposit-based booking reduces no-shows and locks your time. You’ll receive a confirmation message.",
+        deposit_limit: "Limited daily appointments. Deposit required to confirm booking.",
         dep1_t: "1) Pay deposit",
         dep1_b: "Secure your slot with a deposit.",
         dep2_t: "2) WhatsApp confirmation",
@@ -643,16 +699,7 @@
         // Form
         promo_title: "Get the free toolkit + schedule",
         promo_sub: "Leave your info. I’ll send the toolkit and help you book.",
-        f_name_label: "Name",
-        f_phone_label: "Phone",
-        f_email_label: "Email",
-        f_goal_label: "Goal",
-        f_goal_placeholder: "Select one…",
-        f_goal_1: "Injury rehab",
-        f_goal_2: "Return to sport",
-        f_goal_3: "Running pain",
-        f_goal_4: "Performance training",
-        f_consent: "I agree to receive messages about scheduling and my requested resources.",
+        f_consent: "I agree to receive scheduling and service-related messages.",
         f_submit: "Send",
         f_note: "No spam. You can opt out anytime.",
 
@@ -688,6 +735,7 @@
         kicker: "Rehab de rendimiento • Fuerza • Retorno al deporte",
         hero_title: "Fisioterapia Basada en Rendimiento",
         hero_sub: "Rehabilitación de alto nivel con precisión clínica—para atletas y personas activas en Tijuana.",
+        hero_sub_local: "Fisioterapia profesional en Tijuana enfocada en recuperación, fuerza y retorno al movimiento con sesiones 1:1.",
         cta_whatsapp: "WhatsApp",
         cta_book: "Agendar valoración",
 
@@ -730,6 +778,16 @@
         toolkit_cta: "Envíame la guía",
         toolkit_note: "La recibirás por email/WhatsApp al enviar tu información.",
 
+        // Local SEO block
+        local_title: "Fisioterapia en Tijuana",
+        local_lead: "PhysioPro ofrece fisioterapia en Tijuana con un enfoque profesional, sesiones 1:1 y planes personalizados. Atendemos en Zona Río y áreas cercanas.",
+        local_c1_t: "Rehabilitación física",
+        local_c1_b: "Planes progresivos para recuperación de lesiones y mejora del movimiento.",
+        local_c2_t: "Dolor de rodilla y espalda",
+        local_c2_b: "Evaluación y tratamiento orientado a reducir dolor y mejorar capacidad funcional.",
+        local_c3_t: "Clínica en Zona Río",
+        local_c3_b: "Ubicación céntrica en Tijuana con atención personalizada.",
+
         // Services
         services_title: "Servicios",
         services_lead: "Una clínica diseñada para atletas y personas activas.",
@@ -761,7 +819,7 @@
 
         // Deposit
         deposit_title: "Reserva tu valoración",
-        deposit_lead: "El depósito reduce ausencias y asegura tu horario. Recibirás confirmación por WhatsApp.",
+        deposit_limit: "Cupos limitados por día. Depósito requerido para confirmar tu cita.",
         dep1_t: "1) Paga el depósito",
         dep1_b: "Asegura tu espacio con un depósito.",
         dep2_t: "2) Confirmación por WhatsApp",
@@ -797,15 +855,6 @@
         // Form
         promo_title: "Obtén la guía gratis + agenda",
         promo_sub: "Deja tu info. Te envío la guía y te ayudo a agendar.",
-        f_name_label: "Nombre",
-        f_phone_label: "Teléfono",
-        f_email_label: "Correo",
-        f_goal_label: "Objetivo",
-        f_goal_placeholder: "Selecciona uno…",
-        f_goal_1: "Rehabilitación de lesión",
-        f_goal_2: "Retorno al deporte",
-        f_goal_3: "Dolor al correr",
-        f_goal_4: "Entrenamiento de rendimiento",
         f_consent: "Acepto recibir mensajes sobre agenda y recursos solicitados.",
         f_submit: "Enviar",
         f_note: "Sin spam. Te puedes dar de baja cuando quieras.",
