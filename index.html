@@ -452,7 +452,8 @@
             <p class="small" data-i18n="promo_sub">Leave your info. I’ll send the toolkit and help you book.</p>
 
             <!-- FREE form backend (no server): FormSubmit -->
-            <form class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
+            <!-- ✅ ADDED id="contactForm" so JS can attach -->
+            <form id="contactForm" class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New PhysioPro Website Lead" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
@@ -937,6 +938,43 @@
     // Toggle
     document.getElementById("btnEN").addEventListener("click", () => setLang("en"));
     document.getElementById("btnES").addEventListener("click", () => setLang("es"));
+  </script>
+
+  <!-- ✅ NEW: send lead to your API ALSO (without breaking FormSubmit) -->
+  <script>
+    /**
+     * CHANGE THIS ONCE when you move environments:
+     * - Codespaces: use your forwarded domain (https://xxxx.github.dev)
+     * - Production: your real API domain (https://api.physiopro.mx)
+     */
+    const API_BASE_URL = ""; // <- put your API base url here, example: "https://super-duper-space-meme-77w764p5prfp4gp.github.dev"
+
+    (function () {
+      const form = document.getElementById("contactForm");
+      if (!form) return;
+
+      form.addEventListener("submit", function () {
+        // If you haven't set API_BASE_URL, we skip quietly (FormSubmit still works)
+        if (!API_BASE_URL) return;
+
+        const payload = {
+          name: document.getElementById("name")?.value || "",
+          phone: document.getElementById("phone")?.value || "",
+          email: document.getElementById("email")?.value || "",
+          goal: document.getElementById("goal")?.value || "",
+          source: "website"
+        };
+
+        // Fire-and-forget: don't block the form submit
+        fetch(`${API_BASE_URL}/api/leads`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        }).catch(() => {
+          // intentionally silent: we still want the email lead from FormSubmit
+        });
+      });
+    })();
   </script>
 
 </body>
