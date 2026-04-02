@@ -10,7 +10,7 @@
   <meta name="description"
     content="Fisioterapia en Tijuana. Rehabilitación física, recuperación de lesiones y mejora del movimiento en Zona Río." />
 
-  <!-- Open Graph (share previews) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="PhysioPro | Fisioterapia en Tijuana" />
   <meta property="og:description"
     content="Rehabilitación física y mejora del movimiento en Zona Río Tijuana. Sesiones 1:1 y plan claro." />
@@ -22,12 +22,10 @@
   <meta name="geo.region" content="MX-BCN" />
   <meta name="robots" content="index,follow" />
 
-  <!-- If your logo is PNG, change logo.jpg -> logo.png -->
   <link rel="icon" href="images/logo.jpg" />
-
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Local Business Schema (JSON-LD) -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,7 +46,6 @@
   }
   </script>
 
-  <!-- Optional ratings schema (update reviewCount as you get real reviews) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,18 +61,16 @@
 </head>
 
 <body>
-
-  <!-- HERO -->
-  <header class="hero">
+  <header class="site-header">
     <div class="container">
       <nav class="nav">
-        <div class="brand">
-          <img src="images/logo.jpg" alt="PhysioPro logo" />
+        <a href="#" class="brand">
+          <img src="images/logo.jpg" alt="PhysioPro logo" class="logo" />
           <div class="name">
-            <strong>PHYSIOPRO</strong>
+            <strong>PhysioPro</strong>
             <span data-i18n="tagline">Recovery Starts Here</span>
           </div>
-        </div>
+        </a>
 
         <div class="navlinks">
           <a href="#about" data-i18n="nav_about">About</a>
@@ -93,39 +88,37 @@
         </div>
       </nav>
 
-      <div class="hero-inner">
-        <div class="kicker">
-          <span class="kdot"></span>
-          <span data-i18n="kicker">Performance rehab • Strength • Return to sport</span>
-        </div>
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">PhysioPro</span>
+            <h1 data-i18n="hero_title">Recovery Starts Here</h1>
+            <p class="hero-sub" data-i18n="hero_sub">
+              Physical therapy, rehabilitation, and performance in Zona Río, Tijuana.
+            </p>
 
-        <h1 data-i18n="hero_title">Performance-Based Physical Therapy</h1>
+            <div class="hero-cta">
+              <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
+                data-i18n="hero_cta1">
+                Book by WhatsApp
+              </a>
+              <a class="btn ghost" href="#services" data-i18n="hero_cta2">
+                View Services
+              </a>
+            </div>
 
-        <p class="sub" data-i18n="hero_sub_local">
-          Fisioterapia profesional en Tijuana enfocada en recuperación, fuerza y retorno al movimiento con sesiones 1:1.
-        </p>
-
-        <div class="cta">
-          <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
-            data-i18n="cta_whatsapp">WhatsApp</a>
-          <a class="btn ghost" href="#deposit" data-i18n="cta_book">Book evaluation</a>
-        </div>
-
-        <div class="proof">
-          <div class="pill">
-            <strong data-i18n="pA_title">Evidence-based</strong>
-            <span data-i18n="pA_body">Objective testing and clear progression.</span>
+            <div class="hero-points">
+              <span data-i18n="hero_point1">1:1 care</span>
+              <span data-i18n="hero_point2">Movement-based rehab</span>
+              <span data-i18n="hero_point3">Athlete-focused approach</span>
+            </div>
           </div>
-          <div class="pill">
-            <strong data-i18n="pB_title">Strength first</strong>
-            <span data-i18n="pB_body">Load management + performance transfer.</span>
-          </div>
-          <div class="pill">
-            <strong data-i18n="pC_title">Premium experience</strong>
-            <span data-i18n="pC_body">Clean, focused sessions—no fluff.</span>
+
+          <div class="hero-media">
+            <img src="images/hero-clinic.jpg" alt="PhysioPro rehabilitation and performance clinic in Tijuana" />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </header>
 
@@ -164,6 +157,9 @@
 
           <div class="about-card">
             <div class="badge" data-i18n="about_badge">Founder / PT</div>
+            <div class="about-image">
+              <img src="images/about-leonardo.jpg" alt="Leonardo Machado Physical Therapist PhysioPro" />
+            </div>
             <h3 class="h3tight" data-i18n="about_name">Leonardo Machado</h3>
             <p class="small" data-i18n="about_cred">
               Physical Therapist • Performance Rehab • Tijuana
@@ -184,7 +180,7 @@
       </div>
     </section>
 
-    <!-- FREE TOOLKIT (Lead Magnet) -->
+    <!-- TOOLKIT -->
     <section id="toolkit" class="section alt">
       <div class="container">
         <h2 data-i18n="toolkit_title">Free Toolkit</h2>
@@ -192,18 +188,29 @@
           Download a simple guide to reduce injury risk and train smarter.
         </p>
 
-        <div class="grid">
-          <div class="card">
-            <h3 data-i18n="tk1_t">Runner’s Injury Prevention</h3>
-            <p data-i18n="tk1_b">Warm-up, strength basics, and common mistakes that keep runners stuck.</p>
+        <div class="grid visual-grid">
+          <div class="card visual-card">
+            <img src="images/toolkit-runner.jpg" alt="Runner injury prevention toolkit" />
+            <div class="card-copy">
+              <h3 data-i18n="tk1_t">Runner’s Injury Prevention</h3>
+              <p data-i18n="tk1_b">Warm-up, strength basics, and common mistakes that keep runners stuck.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3 data-i18n="tk2_t">Knee Pain Starter Plan</h3>
-            <p data-i18n="tk2_b">3-step plan to rebuild tolerance and strength safely.</p>
+
+          <div class="card visual-card">
+            <img src="images/toolkit-knee.jpg" alt="Knee pain starter plan toolkit" />
+            <div class="card-copy">
+              <h3 data-i18n="tk2_t">Knee Pain Starter Plan</h3>
+              <p data-i18n="tk2_b">3-step plan to rebuild tolerance and strength safely.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3 data-i18n="tk3_t">Return-to-Sport Checklist</h3>
-            <p data-i18n="tk3_b">The basics we re-test before you go back to full intensity.</p>
+
+          <div class="card visual-card">
+            <img src="images/toolkit-return-sport.jpg" alt="Return to sport checklist toolkit" />
+            <div class="card-copy">
+              <h3 data-i18n="tk3_t">Return-to-Sport Checklist</h3>
+              <p data-i18n="tk3_b">The basics we re-test before you go back to full intensity.</p>
+            </div>
           </div>
         </div>
 
@@ -220,61 +227,64 @@
         <h2 data-i18n="services_title">Services</h2>
         <p class="lead" data-i18n="services_lead">A clinic built for athletes and active people.</p>
 
-        <div class="grid">
-          <div class="card">
-            <h3 data-i18n="s1_title">Injury Rehab</h3>
-            <p data-i18n="s1_body">Sports & orthopedic rehab focused on loading, tissue capacity, and strength.</p>
+        <div class="grid visual-grid">
+          <div class="card visual-card">
+            <img src="images/service-rehab.jpg" alt="Injury rehabilitation physical therapy" />
+            <div class="card-copy">
+              <h3 data-i18n="s1_title">Injury Rehab</h3>
+              <p data-i18n="s1_body">Sports & orthopedic rehab focused on loading, tissue capacity, and strength.</p>
+            </div>
           </div>
 
-          <div class="card">
-            <h3 data-i18n="s2_title">Return to Sport</h3>
-            <p data-i18n="s2_body">Criteria-based progressions, re-testing, and a clear plan back to performance.</p>
+          <div class="card visual-card">
+            <img src="images/service-return-sport.jpg" alt="Return to sport rehab progression" />
+            <div class="card-copy">
+              <h3 data-i18n="s2_title">Return to Sport</h3>
+              <p data-i18n="s2_body">Criteria-based progressions, re-testing, and a clear plan back to performance.</p>
+            </div>
           </div>
 
-          <div class="card">
-            <h3 data-i18n="s3_title">Movement Analysis</h3>
-            <p data-i18n="s3_body">Identify limiting factors, asymmetries, and patterns that impact pain and
-              performance.</p>
+          <div class="card visual-card">
+            <img src="images/service-analysis.jpg" alt="Movement analysis assessment" />
+            <div class="card-copy">
+              <h3 data-i18n="s3_title">Movement Analysis</h3>
+              <p data-i18n="s3_body">Identify limiting factors, asymmetries, and patterns that impact pain and performance.</p>
+            </div>
           </div>
 
-          <div class="card">
-            <h3 data-i18n="s4_title">Performance Training</h3>
-            <p data-i18n="s4_body">Strength & conditioning aligned to your sport: sprint, jump, change of direction,
-              endurance.</p>
+          <div class="card visual-card">
+            <img src="images/service-performance.jpg" alt="Performance training in clinic gym" />
+            <div class="card-copy">
+              <h3 data-i18n="s4_title">Performance Training</h3>
+              <p data-i18n="s4_body">Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.</p>
+            </div>
           </div>
         </div>
 
-        <!-- Local SEO Block -->
-        <section class="section alt" style="margin-top:28px;">
+        <section class="section alt local-block">
           <div class="container">
-            <h2 data-i18n="local_title">Fisioterapia en Tijuana</h2>
+            <h2 data-i18n="local_title">Physical Therapy in Tijuana</h2>
             <p class="lead" data-i18n="local_lead">
-              PhysioPro ofrece fisioterapia en Tijuana con un enfoque profesional, sesiones 1:1 y planes personalizados.
-              Atendemos pacientes en Zona Río y áreas cercanas que buscan rehabilitación efectiva y seguimiento
-              continuo.
+              PhysioPro provides professional physical therapy in Tijuana with 1:1 sessions and clear plans. Located in Zona Río and serving nearby areas.
             </p>
 
             <div class="grid">
               <div class="card">
-                <h3 data-i18n="local_c1_t">Rehabilitación física</h3>
-                <p data-i18n="local_c1_b">Planes progresivos para recuperación de lesiones y mejora del movimiento.</p>
+                <h3 data-i18n="local_c1_t">Physical rehabilitation</h3>
+                <p data-i18n="local_c1_b">Progressive plans for recovery and better movement.</p>
               </div>
-
               <div class="card">
-                <h3 data-i18n="local_c2_t">Dolor de rodilla y espalda</h3>
-                <p data-i18n="local_c2_b">Evaluación y tratamiento orientado a reducir dolor y mejorar capacidad
-                  funcional.</p>
+                <h3 data-i18n="local_c2_t">Knee and back pain</h3>
+                <p data-i18n="local_c2_b">Evaluation and treatment to reduce pain and improve function.</p>
               </div>
-
               <div class="card">
-                <h3 data-i18n="local_c3_t">Clínica en Zona Río</h3>
-                <p data-i18n="local_c3_b">Ubicación céntrica en Tijuana con atención personalizada.</p>
+                <h3 data-i18n="local_c3_t">Clinic in Zona Río</h3>
+                <p data-i18n="local_c3_b">Central location in Tijuana with personalized care.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- TRUST STRIP -->
         <div class="proof" style="margin-top:32px;">
           <div class="pill">
             <strong data-i18n="t1_title">Clinical precision</strong>
@@ -297,28 +307,29 @@
       <div class="container">
         <h2 data-i18n="process_title">How it works</h2>
 
-        <div class="steps">
-          <div class="step">
-            <div class="num">1</div>
-            <div>
+        <div class="process-grid">
+          <div class="step-card">
+            <img src="images/process-eval.jpg" alt="Physical therapy evaluation" />
+            <div class="step-content">
+              <div class="num">1</div>
               <h3 data-i18n="p1_title">Evaluation</h3>
-              <p data-i18n="p1_body">Movement system diagnosis + baseline measures so we know exactly what to change.
-              </p>
+              <p data-i18n="p1_body">Movement system diagnosis + baseline measures so we know exactly what to change.</p>
             </div>
           </div>
 
-          <div class="step">
-            <div class="num">2</div>
-            <div>
+          <div class="step-card">
+            <img src="images/process-training.jpg" alt="Training and rehab plan" />
+            <div class="step-content">
+              <div class="num">2</div>
               <h3 data-i18n="p2_title">Plan + Training</h3>
-              <p data-i18n="p2_body">Progressive strength + skill work. You’ll know what to do and why you’re doing it.
-              </p>
+              <p data-i18n="p2_body">Progressive strength + skill work. You’ll know what to do and why you’re doing it.</p>
             </div>
           </div>
 
-          <div class="step">
-            <div class="num">3</div>
-            <div>
+          <div class="step-card">
+            <img src="images/process-retest.jpg" alt="Re-testing progress in physical therapy" />
+            <div class="step-content">
+              <div class="num">3</div>
               <h3 data-i18n="p3_title">Re-test</h3>
               <p data-i18n="p3_body">We re-measure, adjust, and build toward return-to-sport / return-to-running.</p>
             </div>
@@ -327,7 +338,7 @@
       </div>
     </section>
 
-    <!-- DEPOSIT BOOKING -->
+    <!-- DEPOSIT -->
     <section id="deposit" class="section">
       <div class="container">
         <div class="deposit">
@@ -353,7 +364,6 @@
             </div>
 
             <div class="cta" style="margin-top:16px">
-              <!-- TODO: Replace href="#" with your real deposit link (MercadoPago / Stripe / etc.) -->
               <a class="btn primary" href="#" data-i18n="deposit_pay">Pay deposit</a>
               <a class="btn ghost" href="https://wa.me/526634875859" target="_blank" rel="noopener"
                 data-i18n="deposit_help">I have questions (WhatsApp)</a>
@@ -376,22 +386,19 @@
         <div class="grid">
           <div class="card review">
             <div class="stars">★★★★★</div>
-            <p data-i18n="r1_body">“Very professional. Clear plan, measurable progress, and I felt stronger every week.”
-            </p>
+            <p data-i18n="r1_body">“Very professional. Clear plan, measurable progress, and I felt stronger every week.”</p>
             <div class="who" data-i18n="r1_who">— Athlete (Return to sport)</div>
           </div>
 
           <div class="card review">
             <div class="stars">★★★★★</div>
-            <p data-i18n="r2_body">“Premium experience. Clean clinic, focused sessions, and excellent communication.”
-            </p>
+            <p data-i18n="r2_body">“Premium experience. Clean clinic, focused sessions, and excellent communication.”</p>
             <div class="who" data-i18n="r2_who">— Client (Rehab)</div>
           </div>
 
           <div class="card review">
             <div class="stars">★★★★★</div>
-            <p data-i18n="r3_body">“Not just pain relief—performance. The strength progressions were exactly what I
-              needed.”</p>
+            <p data-i18n="r3_body">“Not just pain relief—performance. The strength progressions were exactly what I needed.”</p>
             <div class="who" data-i18n="r3_who">— Runner (Performance)</div>
           </div>
         </div>
@@ -412,8 +419,6 @@
         <p class="lead" data-i18n="contact_lead">Message me on WhatsApp and I’ll get you scheduled.</p>
 
         <div class="contact-grid">
-
-          <!-- LEFT: CONTACT DETAILS -->
           <div class="contact-card">
             <div>
               <h3 data-i18n="contact_h3">PhysioPro — Tijuana</h3>
@@ -421,8 +426,7 @@
               <div class="info-block">
                 <div class="label" data-i18n="hours_label">Hours:</div>
                 <div class="value" data-i18n="hours_value">
-                  Mon–Friday 8:00 AM – 7:00 PM (Last appointment 6:00 PM) • Saturday 8:00 AM – 2:00 PM (Last appointment
-                  1:00 PM)
+                  Mon–Friday 8:00 AM – 7:00 PM (Last appointment 6:00 PM) • Saturday 8:00 AM – 2:00 PM (Last appointment 1:00 PM)
                 </div>
               </div>
 
@@ -440,19 +444,19 @@
 
             <div class="contact-actions">
               <a class="btn primary" href="https://wa.me/526634875859" target="_blank" rel="noopener"
-                data-i18n="cta_whatsapp">WhatsApp</a>
+                data-i18n="hero_cta1">Book by WhatsApp</a>
               <a class="btn ghost" href="tel:+526634875859" data-i18n="cta_call">Call</a>
               <a class="btn ghost" href="mailto:lft.leonardo.machado@gmail.com" data-i18n="cta_email">Email</a>
             </div>
           </div>
 
-          <!-- RIGHT: LEAD FORM -->
           <div class="form-card" id="promo">
-            <h3 data-i18n="promo_title">Get the free toolkit + schedule</h3>
-            <p class="small" data-i18n="promo_sub">Leave your info. I’ll send the toolkit and help you book.</p>
+            <div class="funnel-top">
+              <span class="badge" data-i18n="funnel_badge">Free guide + priority contact</span>
+              <h3 data-i18n="promo_title">Get the free toolkit + schedule</h3>
+              <p class="small" data-i18n="promo_sub">Leave your info. I’ll send the toolkit and help you book.</p>
+            </div>
 
-            <!-- FREE form backend (no server): FormSubmit -->
-            <!-- ✅ ADDED id="contactForm" so JS can attach -->
             <form id="contactForm" class="promo-form" action="https://formsubmit.co/lft.leonardo.machado@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New PhysioPro Website Lead" />
               <input type="hidden" name="_captcha" value="false" />
@@ -460,19 +464,18 @@
               <input type="hidden" name="_next"
                 value="https://lftleonardomachado-dev.github.io/Physiopro-site/#thanks" />
 
-              <!-- Name -->
               <label class="f-label" for="name" data-i18n="f_name_label">Name</label>
-              <input class="f-input" id="name" name="Name" type="text" required placeholder="Your full name" />
+              <input class="f-input" id="name" name="Name" type="text" required
+                placeholder="Your full name" data-i18n-placeholder="f_name_ph" />
 
-              <!-- Phone -->
               <label class="f-label" for="phone" data-i18n="f_phone_label">Phone</label>
-              <input class="f-input" id="phone" name="Phone" type="tel" required placeholder="+52 663..." />
+              <input class="f-input" id="phone" name="Phone" type="tel" required
+                placeholder="+52 663..." data-i18n-placeholder="f_phone_ph" />
 
-              <!-- Email -->
               <label class="f-label" for="email" data-i18n="f_email_label">Email</label>
-              <input class="f-input" id="email" name="Email" type="email" required placeholder="you@email.com" />
+              <input class="f-input" id="email" name="Email" type="email" required
+                placeholder="you@email.com" data-i18n-placeholder="f_email_ph" />
 
-              <!-- Goal -->
               <label class="f-label" for="goal" data-i18n="f_goal_label">Goal</label>
               <select class="f-input" id="goal" name="Goal" required>
                 <option value="" selected disabled data-i18n="f_goal_placeholder">Select one…</option>
@@ -482,14 +485,18 @@
                 <option value="Performance Training" data-i18n="f_goal_4">Performance training</option>
               </select>
 
-              <!-- Consent -->
               <label class="consent">
                 <input type="checkbox" name="Consent" value="Agreed" required />
                 <span data-i18n="f_consent">I agree to receive scheduling and service-related messages.</span>
               </label>
 
-              <!-- Submit -->
               <button class="btn primary full" type="submit" data-i18n="f_submit">Get the Toolkit + Book</button>
+
+              <div class="funnel-points">
+                <span data-i18n="funnel_point1">Quick response</span>
+                <span data-i18n="funnel_point2">Free guide</span>
+                <span data-i18n="funnel_point3">Booking help</span>
+              </div>
 
               <p class="tiny" data-i18n="f_note">No spam. You can opt out anytime.</p>
               <p class="tiny" style="margin-top:8px">
@@ -498,22 +505,18 @@
               </p>
             </form>
           </div>
-
         </div>
 
-        <!-- MAP -->
         <div class="map-card">
           <iframe title="PhysioPro Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+BC,+Mexico&output=embed">
           </iframe>
         </div>
 
-        <!-- THANK YOU ANCHOR -->
         <div id="thanks" class="thanks">
           <strong data-i18n="thanks_title">Thanks!</strong>
           <span data-i18n="thanks_sub">I received your info. I’ll reach out soon.</span>
         </div>
-
       </div>
     </section>
 
@@ -562,10 +565,8 @@
   </footer>
 
   <script>
-    // ======= i18n dictionary =======
     const I18N = {
       en: {
-        // Nav + hero
         tagline: "Recovery Starts Here",
         nav_about: "About",
         nav_services: "Services",
@@ -574,22 +575,15 @@
         nav_deposit: "Deposit",
         nav_reviews: "Reviews",
         nav_contact: "Contact",
-        kicker: "Performance rehab • Strength • Return to sport",
-        hero_title: "Performance-Based Physical Therapy",
-        hero_sub: "High-level rehab with clinical precision—built for athletes and active people in Tijuana.",
-        hero_sub_local: "Professional physical therapy in Tijuana focused on recovery, strength, and return to movement with 1:1 sessions.",
-        cta_whatsapp: "WhatsApp",
-        cta_book: "Book evaluation",
 
-        // Proof
-        pA_title: "Evidence-based",
-        pA_body: "Objective testing and clear progression.",
-        pB_title: "Strength first",
-        pB_body: "Load management + performance transfer.",
-        pC_title: "Premium experience",
-        pC_body: "Clean, focused sessions—no fluff.",
+        hero_title: "Recovery Starts Here",
+        hero_sub: "Physical therapy, rehabilitation, and performance in Zona Río, Tijuana.",
+        hero_cta1: "Book by WhatsApp",
+        hero_cta2: "View Services",
+        hero_point1: "1:1 care",
+        hero_point2: "Movement-based rehab",
+        hero_point3: "Athlete-focused approach",
 
-        // About
         about_title: "About PhysioPro",
         about_lead: "Rehab built around strength, objective testing, and a clear return-to-performance plan.",
         about_b1_t: "Movement-system diagnosis",
@@ -608,7 +602,6 @@
         about_mp2_t: "Premium 1:1 sessions",
         about_mp2_b: "Focused time, clear plan.",
 
-        // Toolkit
         toolkit_title: "Free Toolkit",
         toolkit_lead: "Download a simple guide to reduce injury risk and train smarter.",
         tk1_t: "Runner’s Injury Prevention",
@@ -620,7 +613,6 @@
         toolkit_cta: "Send me the toolkit",
         toolkit_note: "You’ll receive it by email/WhatsApp after you submit.",
 
-        // Local SEO block
         local_title: "Physical Therapy in Tijuana",
         local_lead: "PhysioPro provides professional physical therapy in Tijuana with 1:1 sessions and clear plans. Located in Zona Río and serving nearby areas.",
         local_c1_t: "Physical rehabilitation",
@@ -630,7 +622,6 @@
         local_c3_t: "Clinic in Zona Río",
         local_c3_b: "Central location in Tijuana with personalized care.",
 
-        // Services
         services_title: "Services",
         services_lead: "A clinic built for athletes and active people.",
         s1_title: "Injury Rehab",
@@ -642,7 +633,6 @@
         s4_title: "Performance Training",
         s4_body: "Strength & conditioning aligned to your sport: sprint, jump, change of direction, endurance.",
 
-        // Trust strip
         t1_title: "Clinical precision",
         t1_body: "Movement assessment + objective re-testing.",
         t2_title: "Performance mindset",
@@ -650,7 +640,6 @@
         t3_title: "Premium sessions",
         t3_body: "1:1 focus. Clear plan. Measurable progress.",
 
-        // Process
         process_title: "How it works",
         p1_title: "Evaluation",
         p1_body: "Movement system diagnosis + baseline measures so we know exactly what to change.",
@@ -659,7 +648,6 @@
         p3_title: "Re-test",
         p3_body: "We re-measure, adjust, and build toward return-to-sport / return-to-running.",
 
-        // Deposit
         deposit_title: "Reserve Your Evaluation",
         deposit_limit: "Limited daily appointments. Deposit required to confirm booking.",
         dep1_t: "1) Pay deposit",
@@ -672,7 +660,6 @@
         deposit_help: "I have questions (WhatsApp)",
         deposit_policy: "Deposit is applied to your evaluation. Reschedules require notice. Ask on WhatsApp for details.",
 
-        // Reviews
         reviews_title: "Reviews",
         reviews_lead: "What clients say about the PhysioPro experience.",
         r1_body: "“Very professional. Clear plan, measurable progress, and I felt stronger every week.”",
@@ -683,7 +670,6 @@
         r3_who: "— Runner (Performance)",
         reviews_cta: "Leave a Google Review",
 
-        // Contact
         contact_title: "Contact",
         contact_lead: "Message me on WhatsApp and I’ll get you scheduled.",
         contact_h3: "PhysioPro — Tijuana",
@@ -694,12 +680,9 @@
         cta_call: "Call",
         cta_email: "Email",
 
-        // Form
+        funnel_badge: "Free guide + priority contact",
         promo_title: "Get the free toolkit + schedule",
         promo_sub: "Leave your info. I’ll send the toolkit and help you book.",
-        f_consent: "I agree to receive scheduling and service-related messages.",
-        f_submit: "Send",
-        f_note: "No spam. You can opt out anytime.",
         f_name_label: "Name",
         f_phone_label: "Phone",
         f_email_label: "Email",
@@ -709,14 +692,19 @@
         f_goal_2: "Return to sport",
         f_goal_3: "Running pain",
         f_goal_4: "Performance training",
+        f_name_ph: "Your full name",
+        f_phone_ph: "+52 663...",
+        f_email_ph: "you@email.com",
+        f_consent: "I agree to receive scheduling and service-related messages.",
         f_submit: "Get the Toolkit + Book",
+        funnel_point1: "Quick response",
+        funnel_point2: "Free guide",
+        funnel_point3: "Booking help",
         f_note: "No spam. You can opt out anytime.",
 
-        // Thanks
         thanks_title: "Thanks!",
         thanks_sub: "I received your info. I’ll reach out soon.",
 
-        // Privacy + Consent
         footer_privacy: "Privacy",
         footer_consent: "Consent",
         privacy_title: "Privacy Policy (Summary)",
@@ -726,13 +714,11 @@
         consent_lead: "By submitting your info you agree to receive messages about scheduling and your requested resources.",
         consent_body: "You may opt out anytime. Message “STOP” on WhatsApp or email us to unsubscribe.",
 
-        // Footer
         footer_brand: "PhysioPro",
         footer_loc: "Tijuana, MX"
       },
 
       es: {
-        // Nav + hero
         tagline: "Tu recuperación empieza aquí",
         nav_about: "Acerca de",
         nav_services: "Servicios",
@@ -741,22 +727,15 @@
         nav_deposit: "Depósito",
         nav_reviews: "Reseñas",
         nav_contact: "Contacto",
-        kicker: "Rehab de rendimiento • Fuerza • Retorno al deporte",
-        hero_title: "Fisioterapia Basada en Rendimiento",
-        hero_sub: "Rehabilitación de alto nivel con precisión clínica—para atletas y personas activas en Tijuana.",
-        hero_sub_local: "Fisioterapia profesional en Tijuana enfocada en recuperación, fuerza y retorno al movimiento con sesiones 1:1.",
-        cta_whatsapp: "WhatsApp",
-        cta_book: "Agendar valoración",
 
-        // Proof
-        pA_title: "Basado en evidencia",
-        pA_body: "Evaluación objetiva y progresión clara.",
-        pB_title: "Fuerza primero",
-        pB_body: "Manejo de carga + transferencia al rendimiento.",
-        pC_title: "Experiencia premium",
-        pC_body: "Sesiones limpias, enfocadas—sin relleno.",
+        hero_title: "Tu recuperación empieza aquí",
+        hero_sub: "Fisioterapia, rehabilitación y rendimiento en Zona Río, Tijuana.",
+        hero_cta1: "Agenda por WhatsApp",
+        hero_cta2: "Ver servicios",
+        hero_point1: "Atención 1 a 1",
+        hero_point2: "Rehabilitación con movimiento",
+        hero_point3: "Enfoque para deportistas",
 
-        // About
         about_title: "Acerca de PhysioPro",
         about_lead: "Rehab basado en fuerza, evaluación objetiva y un plan claro para volver a rendir.",
         about_b1_t: "Diagnóstico del sistema de movimiento",
@@ -775,7 +754,6 @@
         about_mp2_t: "Sesiones premium 1:1",
         about_mp2_b: "Tiempo enfocado, plan claro.",
 
-        // Toolkit
         toolkit_title: "Guía Gratis",
         toolkit_lead: "Descarga una guía simple para reducir riesgo de lesión y entrenar mejor.",
         tk1_t: "Prevención de lesiones para runners",
@@ -787,9 +765,8 @@
         toolkit_cta: "Envíame la guía",
         toolkit_note: "La recibirás por email/WhatsApp al enviar tu información.",
 
-        // Local SEO block
         local_title: "Fisioterapia en Tijuana",
-        local_lead: "PhysioPro ofrece fisioterapia en Tijuana con un enfoque profesional, sesiones 1:1 y planes personalizados. Atendemos en Zona Río y áreas cercanas.",
+        local_lead: "PhysioPro ofrece fisioterapia en Tijuana con un enfoque profesional, sesiones 1:1 y planes claros. Atendemos en Zona Río y áreas cercanas.",
         local_c1_t: "Rehabilitación física",
         local_c1_b: "Planes progresivos para recuperación de lesiones y mejora del movimiento.",
         local_c2_t: "Dolor de rodilla y espalda",
@@ -797,7 +774,6 @@
         local_c3_t: "Clínica en Zona Río",
         local_c3_b: "Ubicación céntrica en Tijuana con atención personalizada.",
 
-        // Services
         services_title: "Servicios",
         services_lead: "Una clínica diseñada para atletas y personas activas.",
         s1_title: "Rehabilitación de lesiones",
@@ -809,7 +785,6 @@
         s4_title: "Entrenamiento de rendimiento",
         s4_body: "Fuerza y acondicionamiento para tu deporte: sprint, salto, cambios de dirección, resistencia.",
 
-        // Trust strip
         t1_title: "Precisión clínica",
         t1_body: "Evaluación de movimiento + re-test objetivo.",
         t2_title: "Mentalidad de rendimiento",
@@ -817,7 +792,6 @@
         t3_title: "Sesiones premium",
         t3_body: "Enfoque 1:1. Plan claro. Progreso medible.",
 
-        // Process
         process_title: "Cómo funciona",
         p1_title: "Valoración",
         p1_body: "Diagnóstico del sistema de movimiento + medidas base para saber exactamente qué cambiar.",
@@ -826,7 +800,6 @@
         p3_title: "Re-test",
         p3_body: "Re-medimos, ajustamos y construimos el retorno al deporte / al running.",
 
-        // Deposit
         deposit_title: "Reserva tu valoración",
         deposit_limit: "Cupos limitados por día. Depósito requerido para confirmar tu cita.",
         dep1_t: "1) Paga el depósito",
@@ -839,7 +812,6 @@
         deposit_help: "Tengo dudas (WhatsApp)",
         deposit_policy: "El depósito se aplica a tu valoración. Reagendar requiere aviso. Pregunta por WhatsApp.",
 
-        // Reviews
         reviews_title: "Reseñas",
         reviews_lead: "Lo que dicen los clientes sobre la experiencia PhysioPro.",
         r1_body: "“Muy profesional. Plan claro, progreso medible y cada semana me sentí más fuerte.”",
@@ -850,7 +822,6 @@
         r3_who: "— Runner (Rendimiento)",
         reviews_cta: "Dejar reseña en Google",
 
-        // Contact
         contact_title: "Contacto",
         contact_lead: "Mándame mensaje por WhatsApp y te agendo.",
         contact_h3: "PhysioPro — Tijuana",
@@ -861,12 +832,9 @@
         cta_call: "Llamar",
         cta_email: "Correo",
 
-        // Form
+        funnel_badge: "Guía gratis + contacto prioritario",
         promo_title: "Obtén la guía gratis + agenda",
         promo_sub: "Deja tu info. Te envío la guía y te ayudo a agendar.",
-        f_consent: "Acepto recibir mensajes sobre agenda y recursos solicitados.",
-        f_submit: "Enviar",
-        f_note: "Sin spam. Te puedes dar de baja cuando quieras.",
         f_name_label: "Nombre",
         f_phone_label: "Teléfono",
         f_email_label: "Correo",
@@ -876,14 +844,19 @@
         f_goal_2: "Retorno al deporte",
         f_goal_3: "Dolor al correr",
         f_goal_4: "Entrenamiento de rendimiento",
+        f_name_ph: "Tu nombre completo",
+        f_phone_ph: "+52 663...",
+        f_email_ph: "tu@email.com",
+        f_consent: "Acepto recibir mensajes sobre agenda y recursos solicitados.",
         f_submit: "Obtener guía + agendar",
+        funnel_point1: "Respuesta rápida",
+        funnel_point2: "Guía gratis",
+        funnel_point3: "Ayuda para agendar",
         f_note: "Sin spam. Te puedes dar de baja cuando quieras.",
 
-        // Thanks
         thanks_title: "¡Gracias!",
         thanks_sub: "Recibí tu info. Te contacto pronto.",
 
-        // Privacy + Consent
         footer_privacy: "Privacidad",
         footer_consent: "Consentimiento",
         privacy_title: "Política de Privacidad (Resumen)",
@@ -893,7 +866,6 @@
         consent_lead: "Al enviar tu info aceptas recibir mensajes sobre agenda y recursos solicitados.",
         consent_body: "Puedes darte de baja cuando quieras. Envía “STOP” por WhatsApp o escríbenos por correo.",
 
-        // Footer
         footer_brand: "PhysioPro",
         footer_loc: "Tijuana, MX"
       }
@@ -902,7 +874,6 @@
     function detectDefaultLang() {
       const lang = (navigator.language || "").toLowerCase();
       const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
-
       const likelySpanish =
         lang.startsWith("es") ||
         tz.includes("tijuana") ||
@@ -921,40 +892,35 @@
         if (dict[key]) el.innerHTML = dict[key];
       });
 
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (dict[key]) el.setAttribute("placeholder", dict[key]);
+      });
+
       document.getElementById("btnEN").classList.toggle("active", lang === "en");
       document.getElementById("btnES").classList.toggle("active", lang === "es");
 
       localStorage.setItem("pp_lang", lang);
     }
 
-    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // Init: saved preference > auto-detect
     const saved = localStorage.getItem("pp_lang");
     const initial = saved || detectDefaultLang();
     setLang(initial);
 
-    // Toggle
     document.getElementById("btnEN").addEventListener("click", () => setLang("en"));
     document.getElementById("btnES").addEventListener("click", () => setLang("es"));
   </script>
 
-  <!-- ✅ NEW: send lead to your API ALSO (without breaking FormSubmit) -->
   <script>
-    /**
-     * CHANGE THIS ONCE when you move environments:
-     * - Codespaces: use your forwarded domain (https://xxxx.github.dev)
-     * - Production: your real API domain (https://api.physiopro.mx)
-     */
-    const API_BASE_URL = ""; // <- put your API base url here, example: "https://super-duper-space-meme-77w764p5prfp4gp.github.dev"
+    const API_BASE_URL = "";
 
     (function () {
       const form = document.getElementById("contactForm");
       if (!form) return;
 
       form.addEventListener("submit", function () {
-        // If you haven't set API_BASE_URL, we skip quietly (FormSubmit still works)
         if (!API_BASE_URL) return;
 
         const payload = {
@@ -965,18 +931,14 @@
           source: "website"
         };
 
-        // Fire-and-forget: don't block the form submit
         fetch(`${API_BASE_URL}/api/leads`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
-        }).catch(() => {
-          // intentionally silent: we still want the email lead from FormSubmit
-        });
+        }).catch(() => {});
       });
     })();
   </script>
-
 </body>
 
 </html>
